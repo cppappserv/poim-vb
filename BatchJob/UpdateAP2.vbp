@@ -1,0 +1,37 @@
+Type=Exe
+Reference=*\G{2A75196C-D9EB-4129-B803-931327F72D5C}#2.8#0#C:\Program Files\Common Files\system\ado\msado15.dll#Microsoft ActiveX Data Objects 2.8 Library
+Reference=*\G{C2BE6961-DF9E-11D1-8B87-00C04FD7A924}#1.0#0#C:\WINDOWS\system32\catsrvut.dll\3#Import 1.0 Type Library
+Reference=*\G{C8B522D5-5CF3-11CE-ADE5-00AA0044773D}#1.0#0#C:\Program Files\Common Files\system\ole db\oledb32.dll\2#Microsoft OLE DB Error Library
+Form=UpdateAP2.frm
+IconForm="Form1"
+Startup="Form1"
+HelpFile=""
+ExeName32="UpdateAP2.exe"
+Command32=""
+Name="UpdateAP2"
+HelpContextID="0"
+CompatibleMode="0"
+MajorVer=1
+MinorVer=0
+RevisionVer=0
+AutoIncrementVer=0
+ServerSupportFiles=0
+VersionCompanyName="Charoen Pokphand Indonesia"
+CompilationType=0
+OptimizationType=0
+FavorPentiumPro(tm)=0
+CodeViewDebugInfo=0
+NoAliasing=0
+BoundsCheck=0
+OverflowCheck=0
+FlPointCheck=0
+FDIVCheck=0
+UnroundedFP=0
+StartMode=0
+Unattended=0
+Retained=0
+ThreadPerObject=0
+MaxNumberOfThreads=1
+
+[MS Transaction Server]
+AutoRefresh=1

@@ -1,0 +1,16 @@
+AJU = SELECT tblPibDok.CAR 
+	FROM tblPibDok Where (tblPibDok.DokKd = '705') And (tblPibDok.DokNo= xBL)
+            
+PIB = SELECT tblPibHdr.PibNo, tblPibHdr.PibTg 
+	FROM tblPibHdr Where tblPibHdr.CAR = xAJU 
+
+SPPB = SELECT tblPibRes.DOKRESNO, tblPibRes.DOKRESTG 
+		From tblPibRes WHERE tblPibRes.RESKD='300' And tblPibRes.CAR = xAJU 
+
+Container = SELECT tblPibCon.ContNo, tblPibCon.ContUkur, tblPibCon.ContTipe 
+		FROM tblPibCon Where tblPibCon.CAR = xAJU 
+
+Other Doc = SELECT tblPibDok.DokKd, tblPibDok.DokNo, tblPibDok.DokTg 
+ 		FROM tblPibDok Where tblPibDok.CAR = xAJU 
+
+

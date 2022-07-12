@@ -1,0 +1,48 @@
+D:\POIMASLI\im1s1310\BPConnection\bin\Release\BPConnection.dll
+D:\POIMASLI\im1s1310\BPConnection\bin\Release\BPConnection.pdb
+D:\POIMASLI\im1s1310\BPConnection\bin\Release\MySql.Data.dll
+D:\POIMASLI\im1s1310\BPConnection\obj\Release\ResolveAssemblyReference.cache
+D:\POIMASLI\im1s1310\BPConnection\obj\Release\BPConnection.Resources.resources
+D:\POIMASLI\im1s1310\BPConnection\obj\Release\BPConnection.vbproj.GenerateResource.Cache
+D:\POIMASLI\im1s1310\BPConnection\obj\Release\BPConnection.dll
+D:\POIMASLI\im1s1310\BPConnection\obj\Release\BPConnection.pdb
+D:\BackupPOIM\BPConnection\bin\Release\BPConnection.dll
+D:\BackupPOIM\BPConnection\bin\Release\BPConnection.pdb
+D:\BackupPOIM\BPConnection\bin\Release\MySql.Data.dll
+D:\BackupPOIM\BPConnection\obj\Release\ResolveAssemblyReference.cache
+D:\BackupPOIM\BPConnection\obj\Release\BPConnection.Resources.resources
+D:\BackupPOIM\BPConnection\obj\Release\BPConnection.vbproj.GenerateResource.Cache
+D:\BackupPOIM\BPConnection\obj\Release\BPConnection.dll
+D:\BackupPOIM\BPConnection\obj\Release\BPConnection.pdb
+D:\POIM20101111\BPConnection\bin\Release\BPConnection.dll
+D:\POIM20101111\BPConnection\bin\Release\BPConnection.pdb
+D:\POIM20101111\BPConnection\bin\Release\MySql.Data.dll
+D:\POIM20101111\BPConnection\obj\Release\ResolveAssemblyReference.cache
+D:\POIM20101111\BPConnection\obj\Release\BPConnection.Resources.resources
+D:\POIM20101111\BPConnection\obj\Release\BPConnection.vbproj.GenerateResource.Cache
+D:\POIM20101111\BPConnection\obj\Release\BPConnection.dll
+D:\POIM20101111\BPConnection\obj\Release\BPConnection.pdb
+D:\Project\Adm. Import\Source POIM\BPConnection\bin\Release\BPConnection.dll
+D:\Project\Adm. Import\Source POIM\BPConnection\bin\Release\BPConnection.pdb
+D:\Project\Adm. Import\Source POIM\BPConnection\bin\Release\MySql.Data.dll
+D:\Project\Adm. Import\Source POIM\BPConnection\obj\Release\ResolveAssemblyReference.cache
+D:\Project\Adm. Import\Source POIM\BPConnection\obj\Release\BPConnection.Resources.resources
+D:\Project\Adm. Import\Source POIM\BPConnection\obj\Release\BPConnection.vbproj.GenerateResource.Cache
+D:\Project\Adm. Import\Source POIM\BPConnection\obj\Release\BPConnection.dll
+D:\Project\Adm. Import\Source POIM\BPConnection\obj\Release\BPConnection.pdb
+E:\project\POIM - Dev\BPConnection\bin\Release\BPConnection.dll
+E:\project\POIM - Dev\BPConnection\bin\Release\BPConnection.pdb
+E:\project\POIM - Dev\BPConnection\bin\Release\MySql.Data.dll
+E:\project\POIM - Dev\BPConnection\obj\Release\ResolveAssemblyReference.cache
+E:\project\POIM - Dev\BPConnection\obj\Release\BPConnection.Resources.resources
+E:\project\POIM - Dev\BPConnection\obj\Release\BPConnection.vbproj.GenerateResource.Cache
+E:\project\POIM - Dev\BPConnection\obj\Release\BPConnection.dll
+E:\project\POIM - Dev\BPConnection\obj\Release\BPConnection.pdb
+E:\VB\POIM - Prod _2\BPConnection\bin\Release\BPConnection.dll
+E:\VB\POIM - Prod _2\BPConnection\bin\Release\BPConnection.pdb
+E:\VB\POIM - Prod _2\BPConnection\bin\Release\MySql.Data.dll
+E:\VB\POIM - Prod _2\BPConnection\obj\Release\ResolveAssemblyReference.cache
+E:\VB\POIM - Prod _2\BPConnection\obj\Release\BPConnection.Resources.resources
+E:\VB\POIM - Prod _2\BPConnection\obj\Release\BPConnection.vbproj.GenerateResource.Cache
+E:\VB\POIM - Prod _2\BPConnection\obj\Release\BPConnection.dll
+E:\VB\POIM - Prod _2\BPConnection\obj\Release\BPConnection.pdb

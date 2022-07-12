@@ -1,0 +1,1797 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F1B17A04-1FD0-4B84-9403-76E4C5A729E8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Sub Main</StartupObject>
+    <RootNamespace>POIM</RootNamespace>
+    <AssemblyName>POIM</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsFormsWithCustomSubMain</MyType>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <ManifestCertificateThumbprint>6ECAE46560076C1CABD327AD59A50E55DACB4E2A</ManifestCertificateThumbprint>
+    <ManifestKeyFile>POIM_TemporaryKey.pfx</ManifestKeyFile>
+    <GenerateManifests>true</GenerateManifests>
+    <SignManifests>true</SignManifests>
+    <PublishUrl>C:\garbage\VB\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>3</ApplicationRevision>
+    <ApplicationVersion>3.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>POIM.xml</DocumentationFile>
+    <NoWarn>
+    </NoWarn>
+    <WarningsAsErrors>42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>POIM.xml</DocumentationFile>
+    <NoWarn>
+    </NoWarn>
+    <WarningsAsErrors>42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.Framework, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.InfoStore, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="MySql.Data, Version=5.2.3.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Windows\assembly\GAC_MSIL\System.Web.Services\2.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="BPConnection.MyConnection" />
+    <Import Include="BPUtility.MyDataUtility" />
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="MySql" />
+    <Import Include="MySql.Data" />
+    <Import Include="MySql.Data.MySqlClient" />
+    <Import Include="MySql.Data.MySqlClient.Properties" />
+    <Import Include="MySql.Data.Types" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class1.vb" />
+    <Compile Include="DlgPilihanAddress.designer.vb">
+      <DependentUpon>DlgPilihanAddress.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DlgPilihanAddress.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DlgListData.designer.vb">
+      <DependentUpon>DlgListData.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DlgListData.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DlgPilihan.designer.vb">
+      <DependentUpon>DlgPilihan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DlgPilihan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="External\BAPB_SAP.designer.vb">
+      <DependentUpon>BAPB_SAP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="External\BAPB_SAP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="External\Sincronize_PIB.designer.vb">
+      <DependentUpon>Sincronize_PIB.vb</DependentUpon>
+    </Compile>
+    <Compile Include="External\Sincronize_PIB.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="External\DataAP2.designer.vb">
+      <DependentUpon>DataAP2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="External\DataAP2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="External\DataPIB.designer.vb">
+      <DependentUpon>DataPIB.vb</DependentUpon>
+    </Compile>
+    <Compile Include="External\DataPIB.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\AboutPOIM.Designer.vb">
+      <DependentUpon>AboutPOIM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main\AboutPOIM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\FRMLogin.Designer.vb">
+      <DependentUpon>FRMLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main\FRMLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\FM00_Monitoring.designer.vb">
+      <DependentUpon>FM00_Monitoring.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Master\FM00_Monitoring.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\FM00_MonitoringList.designer.vb">
+      <DependentUpon>FM00_MonitoringList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Master\FM00_MonitoringList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\FM03_Material.designer.vb">
+      <DependentUpon>FM03_Material.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Master\FM03_Material.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\FM11_Kurs.designer.vb">
+      <DependentUpon>FM11_Kurs.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Master\FM11_Kurs.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\FM30_Produsen.designer.vb">
+      <DependentUpon>FM30_Produsen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Master\FM30_Produsen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\FM12a_Bank.designer.vb">
+      <DependentUpon>FM12a_Bank.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Master\FM12a_Bank.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\FM06_AttachDoc.Designer.vb">
+      <DependentUpon>FM06_AttachDoc.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Master\FM06_AttachDoc.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\FM08_City.designer.vb">
+      <DependentUpon>FM08_City.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Master\FM08_City.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\FM13_BankReff.designer.vb">
+      <DependentUpon>FM13_BankReff.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Master\FM13_BankReff.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\FM14_Incoterm.designer.vb">
+      <DependentUpon>FM14_Incoterm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Master\FM14_Incoterm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\FM15_Origin.designer.vb">
+      <DependentUpon>FM15_Origin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Master\FM15_Origin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\FM16_Packing.Designer.vb">
+      <DependentUpon>FM16_Packing.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Master\FM16_Packing.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\FM01_UserAdmin.Designer.vb">
+      <DependentUpon>FM01_UserAdmin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Master\FM01_UserAdmin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Initial\FrmSettingAksesUser.designer.vb">
+      <DependentUpon>FrmSettingAksesUser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Initial\FrmSettingAksesUser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Initial\FrmSettingAplikasi.designer.vb">
+      <DependentUpon>FrmSettingAplikasi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Initial\FrmSettingAplikasi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Initial\FrmSettingConnection.designer.vb">
+      <DependentUpon>FrmSettingConnection.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Initial\FrmSettingConnection.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Initial\FrmSettingForm.designer.vb">
+      <DependentUpon>FrmSettingForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Initial\FrmSettingForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Initial\FrmSettingUser.designer.vb">
+      <DependentUpon>FrmSettingUser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Initial\FrmSettingUser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\MDIParent1.Designer.vb">
+      <DependentUpon>MDIParent1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main\MDIParent1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\FM02_MaterialGroup.designer.vb">
+      <DependentUpon>FM02_MaterialGroup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Master\FM02_MaterialGroup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\FM04_Material_Origin.Designer.vb">
+      <DependentUpon>FM04_Material_Origin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Master\FM04_Material_Origin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\FM05_Document.designer.vb">
+      <DependentUpon>FM05_Document.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Master\FM05_Document.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\FM07_Country.Designer.vb">
+      <DependentUpon>FM07_Country.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Master\FM07_Country.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\FM09_Company.Designer.vb">
+      <DependentUpon>FM09_Company.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Master\FM09_Company.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\FM10_Currency.designer.vb">
+      <DependentUpon>FM10_Currency.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Master\FM10_Currency.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\FM17_PaymentClass.Designer.vb">
+      <DependentUpon>FM17_PaymentClass.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Master\FM17_PaymentClass.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\FM18_PaymentTerm.Designer.vb">
+      <DependentUpon>FM18_PaymentTerm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Master\FM18_PaymentTerm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\FM19_Plant.designer.vb">
+      <DependentUpon>FM19_Plant.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Master\FM19_Plant.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\FM20_Port.Designer.vb">
+      <DependentUpon>FM20_Port.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Master\FM20_Port.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\FM21_Supplier.designer.vb">
+      <DependentUpon>FM21_Supplier.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Master\FM21_Supplier.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\FM22_SupplierComp.designer.vb">
+      <DependentUpon>FM22_SupplierComp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Master\FM22_SupplierComp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\FM23_Unit.designer.vb">
+      <DependentUpon>FM23_Unit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Master\FM23_Unit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\FM24_Line.designer.vb">
+      <DependentUpon>FM24_Line.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Master\FM24_Line.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\FM25_Expedition.designer.vb">
+      <DependentUpon>FM25_Expedition.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Master\FM25_Expedition.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\FM26_CostCat_SubGroup.designer.vb">
+      <DependentUpon>FM26_CostCat_SubGroup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Master\FM26_CostCat_SubGroup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\FM27_CostCat.designer.vb">
+      <DependentUpon>FM27_CostCat.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Master\FM27_CostCat.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\FM28_CostRates.designer.vb">
+      <DependentUpon>FM28_CostRates.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Master\FM28_CostRates.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\DocImport\FrmBLRIL.designer.vb">
+      <DependentUpon>FrmBLRIL.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PO\DocImport\FrmBLRIL.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\DocImport\FrmBLRILQ.designer.vb">
+      <DependentUpon>FrmBLRILQ.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PO\DocImport\FrmBLRILQ.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\DocImport\FRMRILQuota.Designer.vb">
+      <DependentUpon>FRMRILQuota.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PO\DocImport\FRMRILQuota.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\DocImport\Print\CR02SI_D.vb">
+      <DependentUpon>CR02SI_D.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="PO\DocImport\Print\CRPV_1PO.vb">
+      <DependentUpon>CRPV_1PO.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="PO\DocImport\Print\CRPV_202007221.vb">
+      <DependentUpon>CRPV_20200722.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="PO\DocImport\Print\CR03RILQ.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CR03RILQ.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PO\DocImport\Print\CR03RILT.vb">
+      <DependentUpon>CR03RILT.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="PO\DocImport\Print\CRCVL.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CRCVL.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PO\DocImport\Print\CRDNP.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CRDNP.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PO\DocImport\Print\CROutBPUM.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CROutBPUM.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PO\DocImport\Print\CRPV.vb">
+      <DependentUpon>CRPV.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="PO\DocImport\Print\CRRIL.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CRRIL.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PO\DocImport\Print\CRSZ.vb">
+      <DependentUpon>CRSZ.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="PO\DocImport\Print\CRTandaCSlip.vb">
+      <DependentUpon>CRTandaCSlip.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="PO\DocImport\Print\CRTandaTerimaPajak.vb">
+      <DependentUpon>CRTandaTerimaPajak.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="PO\DocImport\Print\CRTandaTerimaPV.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CRTandaTerimaPV.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PO\FinDoc\CRBPJUMR.vb">
+      <DependentUpon>CRBPJUMR.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="PO\FinDoc\CRCS_01.vb">
+      <DependentUpon>CRCS_01.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="PO\FinDoc\CRBPJUM.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CRBPJUM.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PO\FinDoc\Exp_Csv.Designer.vb">
+      <DependentUpon>Exp_Csv.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PO\FinDoc\Exp_Csv.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\FinDoc\FrmBI.designer.vb">
+      <DependentUpon>FrmBI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PO\FinDoc\FrmBI.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\FinDoc\FrmBPUM.designer.vb">
+      <DependentUpon>FrmBPUM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PO\FinDoc\FrmBPUM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\FinDoc\FrmClosingPO.Designer.vb">
+      <DependentUpon>FrmClosingPO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PO\FinDoc\FrmClosingPO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\FinDoc\frmPilih.Designer.vb">
+      <DependentUpon>frmPilih.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PO\FinDoc\frmPilih.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\FinDoc\Module2.vb" />
+    <Compile Include="PO\FrmBAPB.designer.vb">
+      <DependentUpon>FrmBAPB.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PO\FrmBAPB.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\FrmListPO.Designer.vb">
+      <DependentUpon>FrmListPO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PO\FrmListPO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\FrmListShipment.Designer.vb">
+      <DependentUpon>FrmListShipment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PO\FrmListShipment.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\FrmLT.designer.vb">
+      <DependentUpon>FrmLT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PO\FrmLT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\TandaTerimaCSlip.designer.vb">
+      <DependentUpon>TandaTerimaCSlip.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PO\TandaTerimaCSlip.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module1.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="PO\DocImport\FrmCL2.designer.vb">
+      <DependentUpon>FrmCL2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PO\DocImport\FrmCL2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\DocImport\FrmMCI.designer.vb">
+      <DependentUpon>FrmMCI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PO\DocImport\FrmMCI.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\DocImport\FrmIncLC.Designer.vb">
+      <DependentUpon>FrmIncLC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PO\DocImport\FrmIncLC.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\DocImport\FrmVG.designer.vb">
+      <DependentUpon>FrmVG.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PO\DocImport\FrmVG.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\DocImport\Print\CR02SI_A1.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CR02SI_A.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PO\DocImport\Print\CRBS.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CRBS.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PO\DocImport\Print\CRMCI.vb">
+      <DependentUpon>CRMCI.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="PO\DocImport\Print\CR02SI.vb">
+      <DependentUpon>CR02SI.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="PO\DocImport\Print\CRCAD.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CRCAD.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PO\DocImport\Print\CRJC.vb">
+      <DependentUpon>CRJC.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="PO\DocImport\Print\CRBC.vb">
+      <DependentUpon>CRBC.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="PO\DocImport\Print\CRPC.vb">
+      <DependentUpon>CRPC.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="PO\DocImport\Print\CRICLC.vb">
+      <DependentUpon>CRICLC.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="PO\DocImport\Print\CR02SI_B.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CR02SI_B.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Master\FM29_PassUser.designer.vb">
+      <DependentUpon>FM29_PassUser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Master\FM29_PassUser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\DocImport\Print\CRSB.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CRSB.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PO\DocImport\Print\CRVG.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CRVG.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PO\FinDoc\CRBPUM.vb">
+      <DependentUpon>CRBPUM.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="PO\FinDoc\CRCS.vb">
+      <DependentUpon>CRCS.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="PO\FinDoc\FrmBPJUM.designer.vb">
+      <DependentUpon>FrmBPJUM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PO\FinDoc\FrmBPJUM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\FinDoc\FrmCC.Designer.vb">
+      <DependentUpon>FrmCC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PO\FinDoc\FrmCC.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\FinDoc\FrmCS.designer.vb">
+      <DependentUpon>FrmCS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PO\FinDoc\FrmCS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\FrmListBL.Designer.vb">
+      <DependentUpon>FrmListBL.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PO\FrmListBL.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\FrmCD.Designer.vb">
+      <DependentUpon>FrmCD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PO\FrmCD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\FinDoc\CRCC.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CRCC.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PO\DocImport\FrmBPIB.Designer.vb">
+      <DependentUpon>FrmBPIB.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PO\DocImport\FrmBPIB.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\DocImport\FrmTT.Designer.vb">
+      <DependentUpon>FrmTT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PO\DocImport\FrmTT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\DocImport\FrmCL.Designer.vb">
+      <DependentUpon>FrmCL.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PO\DocImport\FrmCL.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\DocImport\FrmSSPCP.Designer.vb">
+      <DependentUpon>FrmSSPCP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PO\DocImport\FrmSSPCP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\DocImport\FrmKOSK.Designer.vb">
+      <DependentUpon>FrmKOSK.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PO\DocImport\FrmKOSK.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\DocImport\FrmPV.Designer.vb">
+      <DependentUpon>FrmPV.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PO\DocImport\FrmPV.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\DocImport\FrmDI.Designer.vb">
+      <DependentUpon>FrmDI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PO\DocImport\FrmDI.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\DocImport\FrmMenu.Designer.vb">
+      <DependentUpon>FrmMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PO\DocImport\FrmMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\DocImport\FrmRIL.Designer.vb">
+      <DependentUpon>FrmRIL.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PO\DocImport\FrmRIL.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\DocImport\FrmSHIN.Designer.vb">
+      <DependentUpon>FrmSHIN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PO\DocImport\FrmSHIN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\DocImport\Frm_CRViewer.Designer.vb">
+      <DependentUpon>Frm_CRViewer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PO\DocImport\Frm_CRViewer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\DocImport\Print\CRBPIB.vb">
+      <DependentUpon>CRBPIB.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="PO\DocImport\Print\CRTT.vb">
+      <DependentUpon>CRTT.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="PO\DocImport\Print\CRCL.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CRCL.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PO\DocImport\Print\CRSK.vb">
+      <DependentUpon>CRSK.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="PO\DocImport\Print\CR03.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CR03.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PO\DocImport\Print\CR04BR.vb">
+      <DependentUpon>CR04BR.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="PO\DocImport\Print\CR01LC.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CR01LC.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PO\DocImport\FrmBR.Designer.vb">
+      <DependentUpon>FrmBR.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PO\DocImport\FrmBR.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\DocImport\Print\CR03RIL.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CR03RIL.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PO\DocImport\Print\CRDI.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CRDI.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PO\DocImport\Print\CRKO.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CRKO.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PO\DocImport\Print\CRSP_F01.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CRSP_F01.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PO\FinDoc\CRVP.vb">
+      <DependentUpon>CRVP.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="PO\FinDoc\CRVPLamp.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CRVPLamp.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PO\FinDoc\FrmVP.designer.vb">
+      <DependentUpon>FrmVP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PO\FinDoc\FrmVP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\FrmBL.designer.vb">
+      <DependentUpon>FrmBL.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PO\FrmBL.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\FrmListImportData.designer.vb">
+      <DependentUpon>FrmListImportData.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PO\FrmListImportData.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\DocImport\FrmBOLC.Designer.vb">
+      <DependentUpon>FrmBOLC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PO\DocImport\FrmBOLC.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\FrmDoc_Import.Designer.vb">
+      <DependentUpon>FrmDoc_Import.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PO\FrmDoc_Import.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\FrmMonitoring.designer.vb">
+      <DependentUpon>FrmMonitoring.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PO\FrmMonitoring.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\FrmPO.Designer.vb">
+      <DependentUpon>FrmPO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PO\FrmPO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\FrmPOSchedule.designer.vb">
+      <DependentUpon>FrmPOSchedule.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PO\FrmPOSchedule.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\FrmUpdatePIB.designer.vb">
+      <DependentUpon>FrmUpdatePIB.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PO\FrmUpdatePIB.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\TandaTerimaPajak.designer.vb">
+      <DependentUpon>TandaTerimaPajak.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PO\TandaTerimaPajak.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\TandaTerimaPV.designer.vb">
+      <DependentUpon>TandaTerimaPV.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PO\TandaTerimaPV.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\00JudulReport.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>00JudulReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\RP03.vb">
+      <DependentUpon>RP03.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Report\RP06.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RP06.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\RP07.vb">
+      <DependentUpon>RP07.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Report\RP08.vb">
+      <DependentUpon>RP08.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Report\RP02b.vb">
+      <DependentUpon>RP02b.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Report\RP02a.vb">
+      <DependentUpon>RP02a.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Report\Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\ReportSelection.Designer.vb">
+      <DependentUpon>ReportSelection.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Report\ReportSelection.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\RP01.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RP01.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\RP02.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RP02.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\RP05.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RP05.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\Rpt_Excel.Designer.vb">
+      <DependentUpon>Rpt_Excel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Rpt_Excel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\RPZBLOB1.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPZBLOB.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\Rpt_CRViewer.Designer.vb">
+      <DependentUpon>Rpt_CRViewer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Rpt_CRViewer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DlgPilihanAddress.resx">
+      <DependentUpon>DlgPilihanAddress.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DlgListData.resx">
+      <DependentUpon>DlgListData.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DlgPilihan.resx">
+      <DependentUpon>DlgPilihan.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="External\BAPB_SAP.resx">
+      <DependentUpon>BAPB_SAP.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="External\Sincronize_PIB.resx">
+      <DependentUpon>Sincronize_PIB.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="External\DataAP2.resx">
+      <DependentUpon>DataAP2.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="External\DataPIB.resx">
+      <DependentUpon>DataPIB.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\AboutPOIM.resx">
+      <DependentUpon>AboutPOIM.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\FRMLogin.resx">
+      <DependentUpon>FRMLogin.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\FM00_Monitoring.resx">
+      <DependentUpon>FM00_Monitoring.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\FM00_MonitoringList.resx">
+      <DependentUpon>FM00_MonitoringList.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\FM03_Material.resx">
+      <DependentUpon>FM03_Material.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\FM11_Kurs.resx">
+      <DependentUpon>FM11_Kurs.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\FM19_Plant.resx">
+      <DependentUpon>FM19_Plant.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\FM30_Produsen.resx">
+      <DependentUpon>FM30_Produsen.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\FM12a_Bank.resx">
+      <DependentUpon>FM12a_Bank.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\FM06_AttachDoc.resx">
+      <DependentUpon>FM06_AttachDoc.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\FM08_City.resx">
+      <DependentUpon>FM08_City.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\FM13_BankReff.resx">
+      <DependentUpon>FM13_BankReff.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\FM14_Incoterm.resx">
+      <DependentUpon>FM14_Incoterm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\FM15_Origin.resx">
+      <DependentUpon>FM15_Origin.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\FM16_Packing.resx">
+      <DependentUpon>FM16_Packing.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\FM01_UserAdmin.resx">
+      <DependentUpon>FM01_UserAdmin.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Initial\FrmSettingAksesUser.resx">
+      <DependentUpon>FrmSettingAksesUser.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Initial\FrmSettingAplikasi.resx">
+      <DependentUpon>FrmSettingAplikasi.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Initial\FrmSettingConnection.resx">
+      <DependentUpon>FrmSettingConnection.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Initial\FrmSettingForm.resx">
+      <DependentUpon>FrmSettingForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Initial\FrmSettingUser.resx">
+      <DependentUpon>FrmSettingUser.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\MDIParent1.resx">
+      <DependentUpon>MDIParent1.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\FM02_MaterialGroup.resx">
+      <DependentUpon>FM02_MaterialGroup.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\FM04_Material_Origin.resx">
+      <DependentUpon>FM04_Material_Origin.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\FM05_Document.resx">
+      <DependentUpon>FM05_Document.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\FM07_Country.resx">
+      <DependentUpon>FM07_Country.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\FM09_Company.resx">
+      <DependentUpon>FM09_Company.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\FM10_Currency.resx">
+      <DependentUpon>FM10_Currency.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\FM17_PaymentClass.resx">
+      <DependentUpon>FM17_PaymentClass.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\FM18_PaymentTerm.resx">
+      <DependentUpon>FM18_PaymentTerm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\FM20_Port.resx">
+      <DependentUpon>FM20_Port.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\FM21_Supplier.resx">
+      <DependentUpon>FM21_Supplier.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\FM22_SupplierComp.resx">
+      <DependentUpon>FM22_SupplierComp.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\FM23_Unit.resx">
+      <DependentUpon>FM23_Unit.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\FM24_Line.resx">
+      <DependentUpon>FM24_Line.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\FM25_Expedition.resx">
+      <DependentUpon>FM25_Expedition.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\FM26_CostCat_SubGroup.resx">
+      <DependentUpon>FM26_CostCat_SubGroup.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\FM27_CostCat.resx">
+      <DependentUpon>FM27_CostCat.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\FM28_CostRates.resx">
+      <DependentUpon>FM28_CostRates.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\DocImport\FrmBLRIL.resx">
+      <DependentUpon>FrmBLRIL.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\DocImport\FrmBLRILQ.resx">
+      <DependentUpon>FrmBLRILQ.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\DocImport\FRMRILQuota.resx">
+      <DependentUpon>FRMRILQuota.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\DocImport\Print\CR02SI_D.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CR02SI_D.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\DocImport\Print\CRPV_1PO.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRPV_1PO.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\DocImport\Print\CRPV_20200722.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRPV_202007221.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\DocImport\Print\CR03RILQ.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CR03RILQ.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\DocImport\Print\CR03RILT.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CR03RILT.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\DocImport\Print\CRCVL.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRCVL.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\DocImport\Print\CRDNP.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRDNP.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\DocImport\Print\CROutBPUM.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CROutBPUM.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\DocImport\Print\CRPV.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRPV.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\DocImport\Print\CRRIL.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRRIL.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\DocImport\Print\CRSZ.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRSZ.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\DocImport\Print\CRTandaCSlip.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRTandaCSlip.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\DocImport\Print\CRTandaTerimaPajak.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRTandaTerimaPajak.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\DocImport\Print\CRTandaTerimaPV.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRTandaTerimaPV.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\FinDoc\CRBPJUMR.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRBPJUMR.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\FinDoc\CRCS_01.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRCS_01.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\FinDoc\CRBPJUM.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRBPJUM.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\FinDoc\Exp_Csv.resx">
+      <DependentUpon>Exp_Csv.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\FinDoc\FrmBI.resx">
+      <DependentUpon>FrmBI.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\FinDoc\FrmBPUM.resx">
+      <DependentUpon>FrmBPUM.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\FinDoc\FrmClosingPO.resx">
+      <DependentUpon>FrmClosingPO.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\FinDoc\frmPilih.resx">
+      <DependentUpon>frmPilih.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\FrmBAPB.resx">
+      <DependentUpon>FrmBAPB.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\FrmListPO.resx">
+      <DependentUpon>FrmListPO.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\FrmListShipment.resx">
+      <DependentUpon>FrmListShipment.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\FrmLT.resx">
+      <DependentUpon>FrmLT.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\TandaTerimaCSlip.resx">
+      <DependentUpon>TandaTerimaCSlip.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\DocImport\FrmCL2.resx">
+      <DependentUpon>FrmCL2.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\DocImport\FrmMCI.resx">
+      <DependentUpon>FrmMCI.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\DocImport\FrmIncLC.resx">
+      <DependentUpon>FrmIncLC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\DocImport\FrmVG.resx">
+      <DependentUpon>FrmVG.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\DocImport\Print\CR02SI_A.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CR02SI_A1.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\DocImport\Print\CRBS.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRBS.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\DocImport\Print\CRMCI.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRMCI.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\DocImport\Print\CR02SI.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CR02SI.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\DocImport\Print\CRCAD.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRCAD.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\DocImport\Print\CRJC.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRJC.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\DocImport\Print\CRBC.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRBC.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\DocImport\Print\CRPC.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRPC.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\DocImport\Print\CRICLC.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRICLC.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\DocImport\Print\CR02SI_B.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CR02SI_B.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\FM29_PassUser.resx">
+      <DependentUpon>FM29_PassUser.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\DocImport\Print\CRSB.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRSB.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\DocImport\Print\CRVG.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRVG.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\FinDoc\CRBPUM.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRBPUM.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\FinDoc\CRCS.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRCS.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\FinDoc\FrmBPJUM.resx">
+      <DependentUpon>FrmBPJUM.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\FinDoc\FrmCC.resx">
+      <DependentUpon>FrmCC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\FinDoc\FrmCS.resx">
+      <DependentUpon>FrmCS.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\FrmListBL.resx">
+      <DependentUpon>FrmListBL.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\FrmCD.resx">
+      <DependentUpon>FrmCD.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\FinDoc\CRCC.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRCC.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\DocImport\FrmBPIB.resx">
+      <DependentUpon>FrmBPIB.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\DocImport\FrmTT.resx">
+      <DependentUpon>FrmTT.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\DocImport\FrmCL.resx">
+      <DependentUpon>FrmCL.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\DocImport\FrmSSPCP.resx">
+      <DependentUpon>FrmSSPCP.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\DocImport\FrmKOSK.resx">
+      <DependentUpon>FrmKOSK.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\DocImport\FrmPV.resx">
+      <DependentUpon>FrmPV.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\DocImport\FrmBR.resx">
+      <DependentUpon>FrmBR.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\DocImport\FrmDI.resx">
+      <DependentUpon>FrmDI.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\DocImport\FrmMenu.resx">
+      <DependentUpon>FrmMenu.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\DocImport\FrmRIL.resx">
+      <DependentUpon>FrmRIL.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\DocImport\FrmSHIN.resx">
+      <DependentUpon>FrmSHIN.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\DocImport\Frm_CRViewer.resx">
+      <DependentUpon>Frm_CRViewer.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\DocImport\Print\CRBPIB.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRBPIB.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\DocImport\Print\CRTT.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRTT.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\DocImport\Print\CRCL.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRCL.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\DocImport\Print\CRSK.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRSK.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\DocImport\Print\CR03.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CR03.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\DocImport\Print\CR04BR.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CR04BR.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\DocImport\Print\CR01LC.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CR01LC.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\DocImport\Print\CR03RIL.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CR03RIL.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\DocImport\Print\CRDI.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRDI.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\DocImport\Print\CRKO.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRKO.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\DocImport\Print\CRSP_F01.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRSP_F01.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\FinDoc\CRVP.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRVP.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\FinDoc\CRVPLamp.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRVPLamp.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\FinDoc\FrmVP.resx">
+      <DependentUpon>FrmVP.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\FrmBL.resx">
+      <DependentUpon>FrmBL.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\FrmListImportData.resx">
+      <DependentUpon>FrmListImportData.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\DocImport\FrmBOLC.resx">
+      <DependentUpon>FrmBOLC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\FrmDoc_Import.resx">
+      <DependentUpon>FrmDoc_Import.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\FrmPO.resx">
+      <DependentUpon>FrmPO.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\FrmPOSchedule.resx">
+      <DependentUpon>FrmPOSchedule.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\FrmUpdatePIB.resx">
+      <DependentUpon>FrmUpdatePIB.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\TandaTerimaPajak.resx">
+      <DependentUpon>TandaTerimaPajak.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\TandaTerimaPV.resx">
+      <DependentUpon>TandaTerimaPV.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\00JudulReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>00JudulReport.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\RP03.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RP03.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\RP06.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RP06.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\RP07.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RP07.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\RP08.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RP08.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\RP02b.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RP02b.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\RP02a.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RP02a.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ReportSelection.resx">
+      <DependentUpon>ReportSelection.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\RP01.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RP01.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\RP05.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RP05.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Rpt_Excel.resx">
+      <DependentUpon>Rpt_Excel.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\RPZBLOB.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPZBLOB1.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\RP02.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RP02.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Rpt_CRViewer.resx">
+      <DependentUpon>Rpt_CRViewer.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BPConnection\BPConnection.vbproj">
+      <Project>{7541F1DB-A75A-4F00-A0BF-AA5847AD5F8D}</Project>
+      <Name>BPConnection</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BPUtility\BPUtility.vbproj">
+      <Project>{678E3F2B-7F2C-4F28-8C48-FF62E75B70AF}</Project>
+      <Name>BPUtility</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Chart.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ImgCalc.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NewDocumentHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SaveHL.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\app.manifest" />
+    <None Include="Resources\delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Critical.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CLOSE.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\deleteS.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\deleteS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="POIM_TemporaryKey.pfx" />
+    <None Include="Resources\history.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="ADODB">
+      <Guid>{00000206-0000-0010-8000-00AA006D2EA4}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>6</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>4</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Word">
+      <Guid>{00020905-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>8</VersionMajor>
+      <VersionMinor>4</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printer.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\print2.gif" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

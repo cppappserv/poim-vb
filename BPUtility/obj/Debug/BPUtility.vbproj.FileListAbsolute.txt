@@ -1,0 +1,189 @@
+F:\Data\Visual Studio 2008\Projects\BukuPetambak\BPUtility\bin\Debug\BPUtility.dll
+F:\Data\Visual Studio 2008\Projects\BukuPetambak\BPUtility\bin\Debug\BPUtility.pdb
+F:\Data\Visual Studio 2008\Projects\BukuPetambak\BPUtility\bin\Debug\BPUtility.xml
+F:\Data\Visual Studio 2008\Projects\BukuPetambak\BPUtility\bin\Debug\BPConnection.dll
+F:\Data\Visual Studio 2008\Projects\BukuPetambak\BPUtility\bin\Debug\BPConnection.pdb
+F:\Data\Visual Studio 2008\Projects\BukuPetambak\BPUtility\obj\Debug\ResolveAssemblyReference.cache
+F:\Data\Visual Studio 2008\Projects\BukuPetambak\BPUtility\obj\Debug\BPUtility.Resources.resources
+F:\Data\Visual Studio 2008\Projects\BukuPetambak\BPUtility\obj\Debug\BPUtility.vbproj.GenerateResource.Cache
+F:\Data\Visual Studio 2008\Projects\BukuPetambak\BPUtility\obj\Debug\BPUtility.dll
+F:\Data\Visual Studio 2008\Projects\BukuPetambak\BPUtility\obj\Debug\BPUtility.xml
+F:\Data\Visual Studio 2008\Projects\BukuPetambak\BPUtility\obj\Debug\BPUtility.pdb
+C:\Documents and Settings\Hanny Astuti\My Documents\Visual Studio 2008\Projects\POIM\BPUtility\bin\Debug\BPUtility.dll
+C:\Documents and Settings\Hanny Astuti\My Documents\Visual Studio 2008\Projects\POIM\BPUtility\bin\Debug\BPUtility.pdb
+C:\Documents and Settings\Hanny Astuti\My Documents\Visual Studio 2008\Projects\POIM\BPUtility\bin\Debug\BPUtility.xml
+C:\Documents and Settings\Hanny Astuti\My Documents\Visual Studio 2008\Projects\POIM\BPUtility\bin\Debug\BPConnection.dll
+C:\Documents and Settings\Hanny Astuti\My Documents\Visual Studio 2008\Projects\POIM\BPUtility\bin\Debug\BPConnection.pdb
+C:\Documents and Settings\Hanny Astuti\My Documents\Visual Studio 2008\Projects\POIM\BPUtility\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Hanny Astuti\My Documents\Visual Studio 2008\Projects\POIM\BPUtility\obj\Debug\BPUtility.Resources.resources
+C:\Documents and Settings\Hanny Astuti\My Documents\Visual Studio 2008\Projects\POIM\BPUtility\obj\Debug\BPUtility.vbproj.GenerateResource.Cache
+C:\Documents and Settings\Hanny Astuti\My Documents\Visual Studio 2008\Projects\POIM\BPUtility\obj\Debug\BPUtility.dll
+C:\Documents and Settings\Hanny Astuti\My Documents\Visual Studio 2008\Projects\POIM\BPUtility\obj\Debug\BPUtility.xml
+C:\Documents and Settings\Hanny Astuti\My Documents\Visual Studio 2008\Projects\POIM\BPUtility\obj\Debug\BPUtility.pdb
+C:\IMPORT_YANTI\BPUtility\bin\Debug\BPUtility.dll
+C:\IMPORT_YANTI\BPUtility\bin\Debug\BPUtility.pdb
+C:\IMPORT_YANTI\BPUtility\bin\Debug\BPUtility.xml
+C:\IMPORT_YANTI\BPUtility\bin\Debug\BPConnection.dll
+C:\IMPORT_YANTI\BPUtility\bin\Debug\BPConnection.pdb
+C:\IMPORT_YANTI\BPUtility\obj\Debug\ResolveAssemblyReference.cache
+C:\IMPORT_YANTI\BPUtility\obj\Debug\BPUtility.Resources.resources
+C:\IMPORT_YANTI\BPUtility\obj\Debug\BPUtility.vbproj.GenerateResource.Cache
+C:\IMPORT_YANTI\BPUtility\obj\Debug\BPUtility.dll
+C:\IMPORT_YANTI\BPUtility\obj\Debug\BPUtility.xml
+C:\IMPORT_YANTI\BPUtility\obj\Debug\BPUtility.pdb
+D:\Project\Adm. Import\Source POIM Yanti\BPUtility\bin\Debug\BPUtility.dll
+D:\Project\Adm. Import\Source POIM Yanti\BPUtility\bin\Debug\BPUtility.pdb
+D:\Project\Adm. Import\Source POIM Yanti\BPUtility\bin\Debug\BPUtility.xml
+D:\Project\Adm. Import\Source POIM Yanti\BPUtility\bin\Debug\BPConnection.dll
+D:\Project\Adm. Import\Source POIM Yanti\BPUtility\bin\Debug\MySql.Data.dll
+D:\Project\Adm. Import\Source POIM Yanti\BPUtility\bin\Debug\BPConnection.pdb
+D:\Project\Adm. Import\Source POIM Yanti\BPUtility\obj\Debug\ResolveAssemblyReference.cache
+D:\Project\Adm. Import\Source POIM Yanti\BPUtility\obj\Debug\BPUtility.Resources.resources
+D:\Project\Adm. Import\Source POIM Yanti\BPUtility\obj\Debug\BPUtility.vbproj.GenerateResource.Cache
+D:\Project\Adm. Import\Source POIM Yanti\BPUtility\obj\Debug\BPUtility.dll
+D:\Project\Adm. Import\Source POIM Yanti\BPUtility\obj\Debug\BPUtility.xml
+D:\Project\Adm. Import\Source POIM Yanti\BPUtility\obj\Debug\BPUtility.pdb
+D:\POIM20101026\BPUtility\bin\Debug\BPUtility.dll
+D:\POIM20101026\BPUtility\bin\Debug\BPUtility.pdb
+D:\POIM20101026\BPUtility\bin\Debug\BPUtility.xml
+D:\POIM20101026\BPUtility\bin\Debug\BPConnection.dll
+D:\POIM20101026\BPUtility\bin\Debug\MySql.Data.dll
+D:\POIM20101026\BPUtility\bin\Debug\BPConnection.pdb
+D:\POIM20101026\BPUtility\obj\Debug\ResolveAssemblyReference.cache
+D:\POIM20101026\BPUtility\obj\Debug\BPUtility.Resources.resources
+D:\POIM20101026\BPUtility\obj\Debug\BPUtility.vbproj.GenerateResource.Cache
+D:\POIM20101026\BPUtility\obj\Debug\BPUtility.dll
+D:\POIM20101026\BPUtility\obj\Debug\BPUtility.xml
+D:\POIM20101026\BPUtility\obj\Debug\BPUtility.pdb
+D:\POIM20101104\BPUtility\bin\Debug\BPUtility.dll
+D:\POIM20101104\BPUtility\bin\Debug\BPUtility.pdb
+D:\POIM20101104\BPUtility\bin\Debug\BPUtility.xml
+D:\POIM20101104\BPUtility\bin\Debug\BPConnection.dll
+D:\POIM20101104\BPUtility\bin\Debug\MySql.Data.dll
+D:\POIM20101104\BPUtility\bin\Debug\BPConnection.pdb
+D:\POIM20101104\BPUtility\obj\Debug\ResolveAssemblyReference.cache
+D:\POIM20101104\BPUtility\obj\Debug\BPUtility.Resources.resources
+D:\POIM20101104\BPUtility\obj\Debug\BPUtility.vbproj.GenerateResource.Cache
+D:\POIM20101104\BPUtility\obj\Debug\BPUtility.dll
+D:\POIM20101104\BPUtility\obj\Debug\BPUtility.xml
+D:\POIM20101104\BPUtility\obj\Debug\BPUtility.pdb
+D:\POIM20101111\BPUtility\bin\Debug\BPUtility.dll
+D:\POIM20101111\BPUtility\bin\Debug\BPUtility.pdb
+D:\POIM20101111\BPUtility\bin\Debug\BPUtility.xml
+D:\POIM20101111\BPUtility\bin\Debug\BPConnection.dll
+D:\POIM20101111\BPUtility\bin\Debug\MySql.Data.dll
+D:\POIM20101111\BPUtility\bin\Debug\BPConnection.pdb
+D:\POIM20101111\BPUtility\obj\Debug\ResolveAssemblyReference.cache
+D:\POIM20101111\BPUtility\obj\Debug\BPUtility.Resources.resources
+D:\POIM20101111\BPUtility\obj\Debug\BPUtility.vbproj.GenerateResource.Cache
+D:\POIM20101111\BPUtility\obj\Debug\BPUtility.dll
+D:\POIM20101111\BPUtility\obj\Debug\BPUtility.xml
+D:\POIM20101111\BPUtility\obj\Debug\BPUtility.pdb
+D:\Project\Adm. Import\Source POIM\BPUtility\bin\Debug\BPUtility.dll
+D:\Project\Adm. Import\Source POIM\BPUtility\bin\Debug\BPUtility.pdb
+D:\Project\Adm. Import\Source POIM\BPUtility\bin\Debug\BPUtility.xml
+D:\Project\Adm. Import\Source POIM\BPUtility\bin\Debug\BPConnection.dll
+D:\Project\Adm. Import\Source POIM\BPUtility\bin\Debug\MySql.Data.dll
+D:\Project\Adm. Import\Source POIM\BPUtility\bin\Debug\BPConnection.pdb
+D:\Project\Adm. Import\Source POIM\BPUtility\obj\Debug\ResolveAssemblyReference.cache
+D:\Project\Adm. Import\Source POIM\BPUtility\obj\Debug\BPUtility.Resources.resources
+D:\Project\Adm. Import\Source POIM\BPUtility\obj\Debug\BPUtility.vbproj.GenerateResource.Cache
+D:\Project\Adm. Import\Source POIM\BPUtility\obj\Debug\BPUtility.dll
+D:\Project\Adm. Import\Source POIM\BPUtility\obj\Debug\BPUtility.xml
+D:\Project\Adm. Import\Source POIM\BPUtility\obj\Debug\BPUtility.pdb
+D:\Project\Adm. Import\Source POIM plus Laytime\BPUtility\bin\Debug\BPUtility.dll
+D:\Project\Adm. Import\Source POIM plus Laytime\BPUtility\bin\Debug\BPUtility.pdb
+D:\Project\Adm. Import\Source POIM plus Laytime\BPUtility\bin\Debug\BPUtility.xml
+D:\Project\Adm. Import\Source POIM plus Laytime\BPUtility\bin\Debug\BPConnection.dll
+D:\Project\Adm. Import\Source POIM plus Laytime\BPUtility\bin\Debug\MySql.Data.dll
+D:\Project\Adm. Import\Source POIM plus Laytime\BPUtility\bin\Debug\BPConnection.pdb
+D:\Project\Adm. Import\Source POIM plus Laytime\BPUtility\obj\Debug\ResolveAssemblyReference.cache
+D:\Project\Adm. Import\Source POIM plus Laytime\BPUtility\obj\Debug\BPUtility.Resources.resources
+D:\Project\Adm. Import\Source POIM plus Laytime\BPUtility\obj\Debug\BPUtility.vbproj.GenerateResource.Cache
+D:\Project\Adm. Import\Source POIM plus Laytime\BPUtility\obj\Debug\BPUtility.dll
+D:\Project\Adm. Import\Source POIM plus Laytime\BPUtility\obj\Debug\BPUtility.xml
+D:\Project\Adm. Import\Source POIM plus Laytime\BPUtility\obj\Debug\BPUtility.pdb
+E:\project\POIM - Dev\BPUtility\bin\Debug\BPUtility.dll
+E:\project\POIM - Dev\BPUtility\bin\Debug\BPUtility.pdb
+E:\project\POIM - Dev\BPUtility\bin\Debug\BPUtility.xml
+E:\project\POIM - Dev\BPUtility\bin\Debug\BPConnection.dll
+E:\project\POIM - Dev\BPUtility\bin\Debug\MySql.Data.dll
+E:\project\POIM - Dev\BPUtility\bin\Debug\BPConnection.pdb
+E:\project\POIM - Dev\BPUtility\obj\Debug\ResolveAssemblyReference.cache
+E:\project\POIM - Dev\BPUtility\obj\Debug\BPUtility.Resources.resources
+E:\project\POIM - Dev\BPUtility\obj\Debug\BPUtility.vbproj.GenerateResource.Cache
+E:\project\POIM - Dev\BPUtility\obj\Debug\BPUtility.dll
+E:\project\POIM - Dev\BPUtility\obj\Debug\BPUtility.xml
+E:\project\POIM - Dev\BPUtility\obj\Debug\BPUtility.pdb
+D:\project\POIM - Prod\BPUtility\bin\Debug\BPUtility.dll
+D:\project\POIM - Prod\BPUtility\bin\Debug\BPUtility.pdb
+D:\project\POIM - Prod\BPUtility\bin\Debug\BPUtility.xml
+D:\project\POIM - Prod\BPUtility\bin\Debug\BPConnection.dll
+D:\project\POIM - Prod\BPUtility\bin\Debug\MySql.Data.dll
+D:\project\POIM - Prod\BPUtility\bin\Debug\BPConnection.pdb
+D:\project\POIM - Prod\BPUtility\obj\Debug\ResolveAssemblyReference.cache
+D:\project\POIM - Prod\BPUtility\obj\Debug\BPUtility.Resources.resources
+D:\project\POIM - Prod\BPUtility\obj\Debug\BPUtility.vbproj.GenerateResource.Cache
+D:\project\POIM - Prod\BPUtility\obj\Debug\BPUtility.dll
+D:\project\POIM - Prod\BPUtility\obj\Debug\BPUtility.xml
+D:\project\POIM - Prod\BPUtility\obj\Debug\BPUtility.pdb
+E:\wahyu BAck UP\project\POIM - Prod\BPUtility\bin\Debug\BPUtility.dll
+E:\wahyu BAck UP\project\POIM - Prod\BPUtility\bin\Debug\BPUtility.pdb
+E:\wahyu BAck UP\project\POIM - Prod\BPUtility\bin\Debug\BPUtility.xml
+E:\wahyu BAck UP\project\POIM - Prod\BPUtility\bin\Debug\BPConnection.dll
+E:\wahyu BAck UP\project\POIM - Prod\BPUtility\bin\Debug\MySql.Data.dll
+E:\wahyu BAck UP\project\POIM - Prod\BPUtility\bin\Debug\BPConnection.pdb
+E:\wahyu BAck UP\project\POIM - Prod\BPUtility\obj\Debug\ResolveAssemblyReference.cache
+E:\wahyu BAck UP\project\POIM - Prod\BPUtility\obj\Debug\BPUtility.Resources.resources
+E:\wahyu BAck UP\project\POIM - Prod\BPUtility\obj\Debug\BPUtility.vbproj.GenerateResource.Cache
+E:\wahyu BAck UP\project\POIM - Prod\BPUtility\obj\Debug\BPUtility.dll
+E:\wahyu BAck UP\project\POIM - Prod\BPUtility\obj\Debug\BPUtility.xml
+E:\wahyu BAck UP\project\POIM - Prod\BPUtility\obj\Debug\BPUtility.pdb
+E:\VB\POIM - Prod _2\BPUtility\bin\Debug\BPUtility.dll
+E:\VB\POIM - Prod _2\BPUtility\bin\Debug\BPUtility.pdb
+E:\VB\POIM - Prod _2\BPUtility\bin\Debug\BPUtility.xml
+E:\VB\POIM - Prod _2\BPUtility\bin\Debug\BPConnection.dll
+E:\VB\POIM - Prod _2\BPUtility\bin\Debug\MySql.Data.dll
+E:\VB\POIM - Prod _2\BPUtility\bin\Debug\BPConnection.pdb
+E:\VB\POIM - Prod _2\BPUtility\obj\Debug\ResolveAssemblyReference.cache
+E:\VB\POIM - Prod _2\BPUtility\obj\Debug\BPUtility.Resources.resources
+E:\VB\POIM - Prod _2\BPUtility\obj\Debug\BPUtility.vbproj.GenerateResource.Cache
+E:\VB\POIM - Prod _2\BPUtility\obj\Debug\BPUtility.dll
+E:\VB\POIM - Prod _2\BPUtility\obj\Debug\BPUtility.xml
+E:\VB\POIM - Prod _2\BPUtility\obj\Debug\BPUtility.pdb
+E:\poim\POIM - Prod _2\BPUtility\bin\Debug\BPUtility.dll
+E:\poim\POIM - Prod _2\BPUtility\bin\Debug\BPUtility.pdb
+E:\poim\POIM - Prod _2\BPUtility\bin\Debug\BPUtility.xml
+E:\poim\POIM - Prod _2\BPUtility\bin\Debug\BPConnection.dll
+E:\poim\POIM - Prod _2\BPUtility\bin\Debug\MySql.Data.dll
+E:\poim\POIM - Prod _2\BPUtility\bin\Debug\BPConnection.pdb
+E:\poim\POIM - Prod _2\BPUtility\obj\Debug\ResolveAssemblyReference.cache
+E:\poim\POIM - Prod _2\BPUtility\obj\Debug\BPUtility.Resources.resources
+E:\poim\POIM - Prod _2\BPUtility\obj\Debug\BPUtility.vbproj.GenerateResource.Cache
+E:\poim\POIM - Prod _2\BPUtility\obj\Debug\BPUtility.dll
+E:\poim\POIM - Prod _2\BPUtility\obj\Debug\BPUtility.xml
+E:\poim\POIM - Prod _2\BPUtility\obj\Debug\BPUtility.pdb
+D:\kerja\POIM\POIM - Prod _2\BPUtility\bin\Debug\BPUtility.dll
+D:\kerja\POIM\POIM - Prod _2\BPUtility\bin\Debug\BPUtility.pdb
+D:\kerja\POIM\POIM - Prod _2\BPUtility\bin\Debug\BPUtility.xml
+D:\kerja\POIM\POIM - Prod _2\BPUtility\bin\Debug\BPConnection.dll
+D:\kerja\POIM\POIM - Prod _2\BPUtility\bin\Debug\MySql.Data.dll
+D:\kerja\POIM\POIM - Prod _2\BPUtility\bin\Debug\BPConnection.pdb
+D:\kerja\POIM\POIM - Prod _2\BPUtility\obj\Debug\ResolveAssemblyReference.cache
+D:\kerja\POIM\POIM - Prod _2\BPUtility\obj\Debug\BPUtility.Resources.resources
+D:\kerja\POIM\POIM - Prod _2\BPUtility\obj\Debug\BPUtility.vbproj.GenerateResource.Cache
+D:\kerja\POIM\POIM - Prod _2\BPUtility\obj\Debug\BPUtility.dll
+D:\kerja\POIM\POIM - Prod _2\BPUtility\obj\Debug\BPUtility.xml
+D:\kerja\POIM\POIM - Prod _2\BPUtility\obj\Debug\BPUtility.pdb
+C:\kerja\vb\POIM\POIM - Prod _2\BPUtility\bin\Debug\BPUtility.dll
+C:\kerja\vb\POIM\POIM - Prod _2\BPUtility\bin\Debug\BPUtility.pdb
+C:\kerja\vb\POIM\POIM - Prod _2\BPUtility\bin\Debug\BPUtility.xml
+C:\kerja\vb\POIM\POIM - Prod _2\BPUtility\bin\Debug\BPConnection.dll
+C:\kerja\vb\POIM\POIM - Prod _2\BPUtility\bin\Debug\MySql.Data.dll
+C:\kerja\vb\POIM\POIM - Prod _2\BPUtility\bin\Debug\BPConnection.pdb
+C:\kerja\vb\POIM\POIM - Prod _2\BPUtility\obj\Debug\ResolveAssemblyReference.cache
+C:\kerja\vb\POIM\POIM - Prod _2\BPUtility\obj\Debug\BPUtility.Resources.resources
+C:\kerja\vb\POIM\POIM - Prod _2\BPUtility\obj\Debug\BPUtility.vbproj.GenerateResource.Cache
+C:\kerja\vb\POIM\POIM - Prod _2\BPUtility\obj\Debug\BPUtility.dll
+C:\kerja\vb\POIM\POIM - Prod _2\BPUtility\obj\Debug\BPUtility.xml
+C:\kerja\vb\POIM\POIM - Prod _2\BPUtility\obj\Debug\BPUtility.pdb

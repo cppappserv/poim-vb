@@ -1,0 +1,14 @@
+D:\project\POIM - Prod\BatchJob\UpdateGeneralData.NET\obj\Debug\UpdateGeneralData.vbproj.ResolveComReference.cache
+D:\project\POIM - Prod\BatchJob\UpdateGeneralData.NET\bin\UpdateGeneralData.exe
+D:\project\POIM - Prod\BatchJob\UpdateGeneralData.NET\bin\UpdateGeneralData.pdb
+D:\project\POIM - Prod\BatchJob\UpdateGeneralData.NET\bin\UpdateGeneralData.xml
+D:\project\POIM - Prod\BatchJob\UpdateGeneralData.NET\obj\Debug\ResolveAssemblyReference.cache
+D:\project\POIM - Prod\BatchJob\UpdateGeneralData.NET\obj\Debug\UpdateGeneralData.Form1.resources
+D:\project\POIM - Prod\BatchJob\UpdateGeneralData.NET\obj\Debug\UpdateGeneralData.vbproj.GenerateResource.Cache
+D:\project\POIM - Prod\BatchJob\UpdateGeneralData.NET\obj\Debug\UpdateGeneralData.exe
+D:\project\POIM - Prod\BatchJob\UpdateGeneralData.NET\obj\Debug\UpdateGeneralData.xml
+D:\project\POIM - Prod\BatchJob\UpdateGeneralData.NET\obj\Debug\UpdateGeneralData.pdb
+E:\VB\POIM - Prod _2\BatchJob\UpdateKurs.NET\obj\Debug\UpdateGeneralData.vbproj.ResolveComReference.cache
+E:\VB\POIM - Prod _2\BatchJob\UpdateKurs.NET\obj\Debug\UpdateGeneralData.exe
+E:\VB\POIM - Prod _2\BatchJob\UpdateKurs.NET\obj\Debug\UpdateGeneralData.xml
+E:\VB\POIM - Prod _2\BatchJob\UpdateKurs.NET\obj\Debug\UpdateGeneralData.pdb

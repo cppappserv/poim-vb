@@ -1,0 +1,36 @@
+Mapping komputer untuk ODBC Update PIB
+
+j : 10.101.9.41  --- dbPIB_Alfie
+    pib 5.0.3 cpi sby
+    pib 5.0.3 cpp smg
+    pib 5.0.3 cpi--mdn
+    pib 5.0.3 cpp-morawa
+    pib 5.0.3 cpp-sby
+
+
+k : 10.101.9.39  --- dbPIB_Ditya 
+    di password = exim belum di share
+
+
+l : 10.101.6.116 --- dbPIB_Doni
+    belum di share
+
+m : 10.101.9.42  --- dbPIB_Faisal
+    pib5 medan
+    pib5
+
+n : 		 --- dbPIB_Hory
+    PIB50
+ 
+o : 		 --- dbPIB_Irawaty
+
+p : 10.101.9.196 --- dbPIB_Sukamto
+    pib5.0       - cpp cikampek
+    pib5 cpi-mdn - not accessible
+    pib5 cpp-mdn - not accessible
+
+q : 		 --- dbPIB_Youyoun
+
+r : 		 --- dbPIB_Semarang (pending sampai mereka online ke BC)
+
+s : 		 --- dbPIB_Surabaya (pending sampai mereka online ke BC)
