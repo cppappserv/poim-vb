@@ -1155,14 +1155,25 @@ Public Class FrmBL
         'strSQL = "select '' as 'No.',Invoice_Dt as 'Date',0.00 as 'Amount' from tbl_shipping_invoice " & _
         '         "where invoice_no='' and Invoice_Dt='' and invoice_amount=0"
 
-        strSQL = "select '' as 'No.',curdate() as 'Date',0.00 as 'Original Amount',0.00 as 'Amount',0.00 as 'Penalty Inv.' " & _
+        'strSQL = "select '' as 'No.',curdate() as 'Date',0.00 as 'Original Amount',0.00 as 'Amount',0.00 as 'Penalty Inv.' " & _
+        '         "from tbl_po_Detail as a " & _
+        '         "inner join tbm_material as b on a.material_Code=b.material_code " & _
+        '         "inner join tbl_po as c on a.po_no=c.po_no " & _
+        '         "left outer join tbl_shipping_Detail as d on d.po_no=a.po_no and d.po_item = a.po_item " & _
+        '         "inner join tbm_country as e on e.country_code=a.country_code " & _
+        '         "where a.po_no='" & PO & "' and a.quantity>0 " & _
+        '         "group by a.po_item"
+        ' REMARK BY SUPRAM : 14-09-2022
+
+        strSQL = "select '' as 'No.',curdate() as 'Date',0.00 as 'Original Amount',0.00 as 'Amount',0.00 as 'Penalty Inv.', a.material_code " & _
                  "from tbl_po_Detail as a " & _
                  "inner join tbm_material as b on a.material_Code=b.material_code " & _
                  "inner join tbl_po as c on a.po_no=c.po_no " & _
                  "left outer join tbl_shipping_Detail as d on d.po_no=a.po_no and d.po_item = a.po_item " & _
                  "inner join tbm_country as e on e.country_code=a.country_code " & _
                  "where a.po_no='" & PO & "' and a.quantity>0 " & _
-                 "group by a.po_item"
+                 "group by a.material_code"
+
         dts = DBQueryDataTable(strSQL, MyConn, "", errMSg, UserData)
         GridInv.DataSource = dts
         brs = List.Items.Count - 1

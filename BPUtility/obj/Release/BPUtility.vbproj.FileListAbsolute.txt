@@ -70,3 +70,15 @@ E:\VB\POIM - Prod _2\BPUtility\obj\Release\BPUtility.vbproj.GenerateResource.Cac
 E:\VB\POIM - Prod _2\BPUtility\obj\Release\BPUtility.dll
 E:\VB\POIM - Prod _2\BPUtility\obj\Release\BPUtility.xml
 E:\VB\POIM - Prod _2\BPUtility\obj\Release\BPUtility.pdb
+C:\kerja\vb\POIM\POIM - Prod _2\BPUtility\bin\Release\BPUtility.dll
+C:\kerja\vb\POIM\POIM - Prod _2\BPUtility\bin\Release\BPUtility.pdb
+C:\kerja\vb\POIM\POIM - Prod _2\BPUtility\bin\Release\BPUtility.xml
+C:\kerja\vb\POIM\POIM - Prod _2\BPUtility\bin\Release\BPConnection.dll
+C:\kerja\vb\POIM\POIM - Prod _2\BPUtility\bin\Release\MySql.Data.dll
+C:\kerja\vb\POIM\POIM - Prod _2\BPUtility\bin\Release\BPConnection.pdb
+C:\kerja\vb\POIM\POIM - Prod _2\BPUtility\obj\Release\ResolveAssemblyReference.cache
+C:\kerja\vb\POIM\POIM - Prod _2\BPUtility\obj\Release\BPUtility.Resources.resources
+C:\kerja\vb\POIM\POIM - Prod _2\BPUtility\obj\Release\BPUtility.vbproj.GenerateResource.Cache
+C:\kerja\vb\POIM\POIM - Prod _2\BPUtility\obj\Release\BPUtility.dll
+C:\kerja\vb\POIM\POIM - Prod _2\BPUtility\obj\Release\BPUtility.xml
+C:\kerja\vb\POIM\POIM - Prod _2\BPUtility\obj\Release\BPUtility.pdb

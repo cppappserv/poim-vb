@@ -46,3 +46,11 @@ E:\VB\POIM - Prod _2\BPConnection\obj\Release\BPConnection.Resources.resources
 E:\VB\POIM - Prod _2\BPConnection\obj\Release\BPConnection.vbproj.GenerateResource.Cache
 E:\VB\POIM - Prod _2\BPConnection\obj\Release\BPConnection.dll
 E:\VB\POIM - Prod _2\BPConnection\obj\Release\BPConnection.pdb
+C:\kerja\vb\POIM\POIM - Prod _2\BPConnection\bin\Release\BPConnection.dll
+C:\kerja\vb\POIM\POIM - Prod _2\BPConnection\bin\Release\BPConnection.pdb
+C:\kerja\vb\POIM\POIM - Prod _2\BPConnection\bin\Release\MySql.Data.dll
+C:\kerja\vb\POIM\POIM - Prod _2\BPConnection\obj\Release\ResolveAssemblyReference.cache
+C:\kerja\vb\POIM\POIM - Prod _2\BPConnection\obj\Release\BPConnection.Resources.resources
+C:\kerja\vb\POIM\POIM - Prod _2\BPConnection\obj\Release\BPConnection.vbproj.GenerateResource.Cache
+C:\kerja\vb\POIM\POIM - Prod _2\BPConnection\obj\Release\BPConnection.dll
+C:\kerja\vb\POIM\POIM - Prod _2\BPConnection\obj\Release\BPConnection.pdb
