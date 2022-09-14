@@ -986,8 +986,8 @@ Public Class Frm_CRViewer
                     Case "4"   'For Premix
                         aReport = New CR02SI
                     Case Else
-                        ' aReport = New CR02SI_B  " di cari tanggal batasa di pakai
-                        aReport = New CR02SI_D
+                        aReport = New CR02SI_B    '" di cari tanggal batasa di pakai
+                        ' aReport = New CR02SI_D   ' DI batalkan
                 End Select
 
                 'aReport = New CR02SI
