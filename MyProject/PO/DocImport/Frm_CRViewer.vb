@@ -363,6 +363,21 @@ Public Class Frm_CRViewer
                 "where tr.shipment_no = '" & v_shipmentno & "' and tr.ril_no = '" & v_num & "'"
 
             Case "BRRR"
+                SQlStrA = _
+                "SELECT po_no FROM tbl_remitance AS tr " & _
+                "JOIN tbl_shipping_detail AS tsd ON tr.shipment_no = tsd.shipment_no " & _
+                "where tr.shipment_no = '" & v_pono & "' and tr.ord_no = '" & v_num & "' and tr.type_code = 'BR' and tr.status <> 'Rejected'"
+
+                ErrMsg = "Gagal baca data detail."
+                MyReader = DBQueryMyReader(SQlStrA, MyConn, ErrMsg, UserData)
+                Dim s_pono As String
+                If Not MyReader Is Nothing Then
+                    While MyReader.Read
+                        s_pono = Trim(MyReader.GetString(0))
+                    End While
+                End If
+                CloseMyReader(MyReader, UserData)
+
 
                 'cek jumlah BR dengan LC yang sama
                 SQlStr = _
@@ -387,6 +402,57 @@ Public Class Frm_CRViewer
                 "LEFT JOIN tbm_supplier AS tms ON tp.supplier_code = tms.supplier_code " & _
                 "where tr.shipment_no = '" & v_pono & "' and tr.ord_no = '" & v_num & "' and tr.type_code = 'BR' and tr.STATUS <> 'Rejected'"
 
+                SQlStr = _
+                "SELECT tr2.cutmargin, tr.shipment_no, tr.lc_no, tr.bank_code, tmb.bank_name, tr.account_no, tr2.amount, tr.margin_deposit, tr.commision, tr.postage_charges, tsd.po_no, v1.po_ord, tsd.material_code, tr3.invoice_amount, tmm.material_name, FormatDec(tsd.quantity) AS quantity, tpd.unit_code, tu.unit_name, tp.currency_code, tp.company_code, tmc.company_name, tp.tolerable_delivery, DATE_FORMAT(tr.openingdt,'%M %d, %Y') AS openingdt, tr.remark, tp.supplier_code, tms.supplier_name, tmu.name AS finname,tmu2.name AS appname,tms.note " & _
+                "FROM ( " & _
+                "   SELECT *  " & _
+                "   FROM(tbl_remitance) " & _
+                "   WHERE shipment_no = '" & v_pono & "' AND ord_no = '" & v_num & "' AND type_code = 'BR' AND STATUS <> 'Rejected'  " & _
+                ") AS tr  " & _
+                "INNER JOIN ( " & _
+                "   SELECT lc_no, openingdt, SUM(tr.cutmargin) cutmargin, SUM(tr.amount) amount " & _
+                "   FROM tbl_remitance tr " & _
+                "   WHERE STATUS <> 'Rejected' AND shipment_no = '" & v_pono & "' AND ord_no = '" & v_num & "' AND type_code = 'BR' " & _
+                "   GROUP BY lc_no,openingdt " & _
+                ") tr2 ON tr2.lc_no=tr.lc_no AND tr2.openingdt=tr.openingdt " & _
+                "INNER JOIN ( " & _
+                "   SELECT tsr.openingdt, tsr.lc_no, SUM(tsi.invoice_amount-tsi.invoice_penalty) invoice_amount " & _
+                "   FROM tbl_shipping_invoice tsi, tbl_remitance tsr " & _
+                "   WHERE tsi.shipment_no=tsr.shipment_no AND tsr.status <> 'Rejected' AND tsr.shipment_no = '" & v_pono & "' AND tsr.ord_no = '2' AND tsr.type_code = 'BR' " & _
+                "   GROUP BY tsr.openingdt, tsr.lc_no " & _
+                ") tr3 ON tr3.lc_no=tr.lc_no AND tr3.openingdt=tr.openingdt " & _
+                "INNER JOIN tbl_shipping_detail AS tsd ON tr.shipment_no = tsd.shipment_no " & _
+                "INNER JOIN tbl_shipping AS ts ON tr.shipment_no = ts.shipment_no " & _
+                "INNER JOIN tbl_po AS tp ON tsd.po_no = tp.po_no " & _
+                "INNER JOIN tbl_po_detail AS tpd ON tsd.po_no = tpd.po_no AND tsd.po_item = tpd.po_item " & _
+                "INNER JOIN tbl_budget AS tb ON tb.status <> 'Rejected' AND tr.lc_no = tb.lc_no " & _
+                "INNER JOIN ( " & _
+                "   SELECT t1.shipment_no AS shipment_no, t1.po_no AS po_no, t1.received_copydoc_dt AS received_copydoc_dt, IF((t1.term_code = _latin1'P'),CONCAT(CONVERT(TRIM(t1.po_no) USING utf8),_utf8'(',CAST(t1.orde AS CHAR CHARSET utf8),_utf8')'),CONVERT(TRIM(t1.po_no) USING utf8)) AS po_ord " & _
+                "   FROM ( " & _
+                "       SELECT t1.SHIPMENT_NO AS shipment_no, t1.PO_NO AS po_no, t1.RECEIVED_COPYDOC_DT AS received_copydoc_dt, ( " & _
+                "           SELECT COUNT(0) + 1 AS ttl " & _
+                "           FROM ( " & _
+                "               SELECT DISTINCT t1.SHIPMENT_NO AS SHIPMENT_NO, t1.PO_NO AS PO_NO, t2.RECEIVED_COPYDOC_DT AS RECEIVED_COPYDOC_DT, t3.SHIPMENT_TERM_CODE AS TERM_CODE " & _
+                "               FROM tbl_shipping_detail t1 JOIN tbl_shipping t2 JOIN tbl_po t3 " & _
+                "               WHERE t1.SHIPMENT_NO = t2.SHIPMENT_NO AND t1.PO_NO = t3.PO_NO AND t1.po_no = '" & s_pono & "' " & _
+                "           ) sub_1 " & _
+                "           WHERE(sub_1.PO_NO = t1.PO_NO) " & _
+                "             AND sub_1.SHIPMENT_NO < t1.SHIPMENT_NO " & _
+                "       ) AS orde, t1.TERM_CODE AS term_code " & _
+                "       FROM ( " & _
+                "           SELECT DISTINCT t1.SHIPMENT_NO AS SHIPMENT_NO, t1.PO_NO AS PO_NO, t2.RECEIVED_COPYDOC_DT AS RECEIVED_COPYDOC_DT, t3.SHIPMENT_TERM_CODE  AS TERM_CODE " & _
+                "           FROM tbl_shipping_detail t1 JOIN tbl_shipping t2 JOIN tbl_po t3 " & _
+                "           WHERE t1.SHIPMENT_NO = t2.SHIPMENT_NO AND t1.PO_NO = t3.PO_NO AND t1.po_no = '" & s_pono & "'" & _
+                "      ) t1 " & _
+                "   ) t1 " & _
+                ") v1 ON v1.shipment_no = tr.shipment_no AND v1.po_no = tp.po_no " & _
+                "LEFT JOIN tbm_company AS tmc ON tp.company_code = tmc.company_code " & _
+                "LEFT JOIN tbm_material AS tmm ON tsd.material_code = tmm.material_code " & _
+                "LEFT JOIN tbm_bank AS tmb ON tr.bank_code = tmb.bank_code AND tp.currency_code = tmb.currency_code " & _
+                "LEFT JOIN tbm_unit AS tu ON tpd.unit_code = tu.unit_code " & _
+                "LEFT JOIN tbm_users AS tmu2 ON tr.approvedby = tmu2.user_ct " & _
+                "LEFT JOIN tbm_users AS tmu ON tr.FINANCEAPPBY = tmu.USER_CT " & _
+                "LEFT JOIN tbm_supplier AS tms ON tp.supplier_code = tms.supplier_code "
             Case "DIII"
                 SQlStr = _
                 "select distinct td.shipment_no, td.ord_no, td.FINDOC_PRINTEDON, tc1.city_name as city1,td.FINDOC_PRINTEDdt, td.FINDOC_APPBY, " & _
