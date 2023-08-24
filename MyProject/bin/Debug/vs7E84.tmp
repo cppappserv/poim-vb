@@ -1,0 +1,114 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+POIM
+</name>
+</assembly>
+<members>
+<member name="T:POIM.FrmBLRILQ">
+	<summary>
+ Title                         : Transaksi Bill of Lading - RIL
+ Form                          : FrmBLRIL
+ Table Used                    : tbl_ril_quota, tbl_ril_quota_Detail, tbl_ril, tbl_ril_Detail, tbl_docimpr
+ Stored Procedure Used (MySQL) : SaveBLRILQ
+ Created By                    : AK, 10 November 2010
+ 
+ </summary>
+	<remarks></remarks>
+</member><member name="T:POIM.FrmDOC_Import">
+	<summary>
+ Title                : Transaksi Document Import  ==&gt; menjadi Pre Import Document
+ Form                 : FrmDoc_Import
+ Sub Form             : FrmBOLC, FrmSHIN, FrmRIL
+ Table Used           : tbl_docimpr, tbl_po, tbl_po_detail, tbm_company, tbm_plant, tbm_port, tbm_payment_term, tbm_insurance, tbm_supplier, tbm_currency, tbm_kurs             
+ Form Created By      : Hanny, 07.10.2008
+ Program Coding By    : Yanti, 14.10.2008
+ Modify By            : Yanti, 17.12.2008 Display angka di Grid di format 
+ Modify By            : Yanti, 08.01.2009
+ Modify Note          : - RIL bisa di create selama Quantity dari Materialnya masih tersisa
+                          perhitunganya memasukkan Tolerable Delivery dari PO nya.
+                          Contoh BM dari Argentina di order 1000 ton dengan Tolerable = 0,10 (10%) 
+                          berarti RIL bisa maksimal hingga 1100 ton).
+ 
+ </summary>
+	<remarks></remarks>
+</member><member name="T:POIM.FrmClosingPO">
+	<summary>
+ Title                : Transaksi Closing PO  ==&gt; ubah status PO
+ Form                 : FrmClosingPO
+ Table Used           : tbl_tbl_po, tbm_material, tbm_users
+ Form Created By      : Estrika, 02.11.2010
+ Program Coding By    : Estrika, 02.11.2010
+ Modify By            : -
+ Modify Note          : - 
+                          
+ 
+ </summary>
+	<remarks></remarks>
+</member><member name="T:POIM.FrmBLRIL">
+	<summary>
+ Title                         : Transaksi Bill of Lading - RIL
+ Form                          : FrmBLRIL
+ Table Used                    : tbl_ril, tbl_ril_doc, tbl_ril_Detail, tbl_docimpr
+ Stored Procedure Used (MySQL) : SaveBLRIL
+ Created By                    : Yanti, April 2009
+ 
+ </summary>
+	<remarks></remarks>
+</member><member name="T:POIM.FrmMCI">
+	<summary>
+ Title                         : Transaksi Bill of Lading - MCI
+ Form                          : FrmMCI
+ Table Used                    : tbl_mci, tbl_item_history, tbl_audittrail
+ Stored Procedure Used (MySQL) : SaveMCI
+ Created By                    : Yanti, 30.09.2009
+ 
+ </summary>
+	<remarks></remarks>
+</member><member name="T:POIM.FrmRIL">
+	<summary>
+ Title                         : Transaksi Document Import - RIL
+ Form                          : FrmRIL
+ Table Used                    : tbm_document, tbm_attachment_doc, tbm_users, tbm_users_modul, 
+                                 tbl_ril_doc, tbl_ril, tbl_ril_Detail
+ Stored Procedure Used (MySQL) : SaveRIL
+ Created By                    : Yanti, Nov 2008
+ 
+ Modify By                     : Yanti, 08 Jan 2009 
+ Modify Note                   : - RILNo di input
+                                 - RIL bisa di create selama Quantity dari Materialnya masih tersisa
+                                   perhitunganya memasukkan Tolerable Delivery dari PO nya.
+                                   Contoh BM dari Argentina di order 1000 ton dengan Tolerable = 0,10 (10%) 
+                                   berarti RIL bisa maksimal hingga 1100 ton).
+                                 - Detail Request Import Lisence di tambahkan kolom Origin.
+                                   1 PO untuk material yg sama bisa di import dari 1 atau lebih origin/negara produsen 
+ 
+ </summary>
+	<remarks></remarks>
+</member><member name="T:POIM.FrmLT">
+	<summary>
+ Title                         : Laytime Calculation
+ Form                          : FrmLT
+ Table Used                    :
+ Stored Procedure Used (MySQL) : SaveLT
+ Created By                    : 
+ Note                          : 
+ </summary>
+	<remarks></remarks>
+</member><member name="P:POIM.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:POIM.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:POIM.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+</members>
+</doc>

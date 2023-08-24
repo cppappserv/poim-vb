@@ -1,0 +1,84 @@
+D:\POIMASLI\im1s1310\BPUtility\bin\Release\BPUtility.dll
+D:\POIMASLI\im1s1310\BPUtility\bin\Release\BPUtility.pdb
+D:\POIMASLI\im1s1310\BPUtility\bin\Release\BPUtility.xml
+D:\POIMASLI\im1s1310\BPUtility\bin\Release\BPConnection.dll
+D:\POIMASLI\im1s1310\BPUtility\bin\Release\MySql.Data.dll
+D:\POIMASLI\im1s1310\BPUtility\bin\Release\BPConnection.pdb
+D:\POIMASLI\im1s1310\BPUtility\obj\Release\ResolveAssemblyReference.cache
+D:\POIMASLI\im1s1310\BPUtility\obj\Release\BPUtility.Resources.resources
+D:\POIMASLI\im1s1310\BPUtility\obj\Release\BPUtility.vbproj.GenerateResource.Cache
+D:\POIMASLI\im1s1310\BPUtility\obj\Release\BPUtility.dll
+D:\POIMASLI\im1s1310\BPUtility\obj\Release\BPUtility.xml
+D:\POIMASLI\im1s1310\BPUtility\obj\Release\BPUtility.pdb
+D:\BackupPOIM\BPUtility\bin\Release\BPUtility.dll
+D:\BackupPOIM\BPUtility\bin\Release\BPUtility.pdb
+D:\BackupPOIM\BPUtility\bin\Release\BPUtility.xml
+D:\BackupPOIM\BPUtility\bin\Release\BPConnection.dll
+D:\BackupPOIM\BPUtility\bin\Release\MySql.Data.dll
+D:\BackupPOIM\BPUtility\bin\Release\BPConnection.pdb
+D:\BackupPOIM\BPUtility\obj\Release\ResolveAssemblyReference.cache
+D:\BackupPOIM\BPUtility\obj\Release\BPUtility.Resources.resources
+D:\BackupPOIM\BPUtility\obj\Release\BPUtility.vbproj.GenerateResource.Cache
+D:\BackupPOIM\BPUtility\obj\Release\BPUtility.dll
+D:\BackupPOIM\BPUtility\obj\Release\BPUtility.xml
+D:\BackupPOIM\BPUtility\obj\Release\BPUtility.pdb
+D:\POIM20101111\BPUtility\bin\Release\BPUtility.dll
+D:\POIM20101111\BPUtility\bin\Release\BPUtility.pdb
+D:\POIM20101111\BPUtility\bin\Release\BPUtility.xml
+D:\POIM20101111\BPUtility\bin\Release\BPConnection.dll
+D:\POIM20101111\BPUtility\bin\Release\MySql.Data.dll
+D:\POIM20101111\BPUtility\bin\Release\BPConnection.pdb
+D:\POIM20101111\BPUtility\obj\Release\ResolveAssemblyReference.cache
+D:\POIM20101111\BPUtility\obj\Release\BPUtility.Resources.resources
+D:\POIM20101111\BPUtility\obj\Release\BPUtility.vbproj.GenerateResource.Cache
+D:\POIM20101111\BPUtility\obj\Release\BPUtility.dll
+D:\POIM20101111\BPUtility\obj\Release\BPUtility.xml
+D:\POIM20101111\BPUtility\obj\Release\BPUtility.pdb
+D:\Project\Adm. Import\Source POIM\BPUtility\bin\Release\BPUtility.dll
+D:\Project\Adm. Import\Source POIM\BPUtility\bin\Release\BPUtility.pdb
+D:\Project\Adm. Import\Source POIM\BPUtility\bin\Release\BPUtility.xml
+D:\Project\Adm. Import\Source POIM\BPUtility\bin\Release\BPConnection.dll
+D:\Project\Adm. Import\Source POIM\BPUtility\bin\Release\MySql.Data.dll
+D:\Project\Adm. Import\Source POIM\BPUtility\bin\Release\BPConnection.pdb
+D:\Project\Adm. Import\Source POIM\BPUtility\obj\Release\ResolveAssemblyReference.cache
+D:\Project\Adm. Import\Source POIM\BPUtility\obj\Release\BPUtility.Resources.resources
+D:\Project\Adm. Import\Source POIM\BPUtility\obj\Release\BPUtility.vbproj.GenerateResource.Cache
+D:\Project\Adm. Import\Source POIM\BPUtility\obj\Release\BPUtility.dll
+D:\Project\Adm. Import\Source POIM\BPUtility\obj\Release\BPUtility.xml
+D:\Project\Adm. Import\Source POIM\BPUtility\obj\Release\BPUtility.pdb
+E:\project\POIM - Dev\BPUtility\bin\Release\BPUtility.dll
+E:\project\POIM - Dev\BPUtility\bin\Release\BPUtility.pdb
+E:\project\POIM - Dev\BPUtility\bin\Release\BPUtility.xml
+E:\project\POIM - Dev\BPUtility\bin\Release\BPConnection.dll
+E:\project\POIM - Dev\BPUtility\bin\Release\MySql.Data.dll
+E:\project\POIM - Dev\BPUtility\bin\Release\BPConnection.pdb
+E:\project\POIM - Dev\BPUtility\obj\Release\ResolveAssemblyReference.cache
+E:\project\POIM - Dev\BPUtility\obj\Release\BPUtility.Resources.resources
+E:\project\POIM - Dev\BPUtility\obj\Release\BPUtility.vbproj.GenerateResource.Cache
+E:\project\POIM - Dev\BPUtility\obj\Release\BPUtility.dll
+E:\project\POIM - Dev\BPUtility\obj\Release\BPUtility.xml
+E:\project\POIM - Dev\BPUtility\obj\Release\BPUtility.pdb
+E:\VB\POIM - Prod _2\BPUtility\bin\Release\BPUtility.dll
+E:\VB\POIM - Prod _2\BPUtility\bin\Release\BPUtility.pdb
+E:\VB\POIM - Prod _2\BPUtility\bin\Release\BPUtility.xml
+E:\VB\POIM - Prod _2\BPUtility\bin\Release\BPConnection.dll
+E:\VB\POIM - Prod _2\BPUtility\bin\Release\MySql.Data.dll
+E:\VB\POIM - Prod _2\BPUtility\bin\Release\BPConnection.pdb
+E:\VB\POIM - Prod _2\BPUtility\obj\Release\ResolveAssemblyReference.cache
+E:\VB\POIM - Prod _2\BPUtility\obj\Release\BPUtility.Resources.resources
+E:\VB\POIM - Prod _2\BPUtility\obj\Release\BPUtility.vbproj.GenerateResource.Cache
+E:\VB\POIM - Prod _2\BPUtility\obj\Release\BPUtility.dll
+E:\VB\POIM - Prod _2\BPUtility\obj\Release\BPUtility.xml
+E:\VB\POIM - Prod _2\BPUtility\obj\Release\BPUtility.pdb
+C:\kerja\vb\POIM\POIM - Prod _2\BPUtility\bin\Release\BPUtility.dll
+C:\kerja\vb\POIM\POIM - Prod _2\BPUtility\bin\Release\BPUtility.pdb
+C:\kerja\vb\POIM\POIM - Prod _2\BPUtility\bin\Release\BPUtility.xml
+C:\kerja\vb\POIM\POIM - Prod _2\BPUtility\bin\Release\BPConnection.dll
+C:\kerja\vb\POIM\POIM - Prod _2\BPUtility\bin\Release\MySql.Data.dll
+C:\kerja\vb\POIM\POIM - Prod _2\BPUtility\bin\Release\BPConnection.pdb
+C:\kerja\vb\POIM\POIM - Prod _2\BPUtility\obj\Release\ResolveAssemblyReference.cache
+C:\kerja\vb\POIM\POIM - Prod _2\BPUtility\obj\Release\BPUtility.Resources.resources
+C:\kerja\vb\POIM\POIM - Prod _2\BPUtility\obj\Release\BPUtility.vbproj.GenerateResource.Cache
+C:\kerja\vb\POIM\POIM - Prod _2\BPUtility\obj\Release\BPUtility.dll
+C:\kerja\vb\POIM\POIM - Prod _2\BPUtility\obj\Release\BPUtility.xml
+C:\kerja\vb\POIM\POIM - Prod _2\BPUtility\obj\Release\BPUtility.pdb
