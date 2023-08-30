@@ -418,7 +418,7 @@ Public Class Frm_CRViewer
                 "INNER JOIN ( " & _
                 "   SELECT tsr.openingdt, tsr.lc_no, SUM(tsi.invoice_amount-tsi.invoice_penalty) invoice_amount " & _
                 "   FROM tbl_shipping_invoice tsi, tbl_remitance tsr " & _
-                "   WHERE tsi.shipment_no=tsr.shipment_no AND tsr.status <> 'Rejected' AND tsr.shipment_no = '" & v_pono & "' AND tsr.ord_no = '2' AND tsr.type_code = 'BR' " & _
+                "   WHERE tsi.shipment_no=tsr.shipment_no AND tsr.status <> 'Rejected' AND tsr.shipment_no = '" & v_pono & "' " & _
                 "   GROUP BY tsr.openingdt, tsr.lc_no " & _
                 ") tr3 ON tr3.lc_no=tr.lc_no AND tr3.openingdt=tr.openingdt " & _
                 "INNER JOIN tbl_shipping_detail AS tsd ON tr.shipment_no = tsd.shipment_no " & _
