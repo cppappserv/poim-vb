@@ -45,7 +45,7 @@ Public Class CRSK
     
     Public Overrides Property FullResourceName() As String
         Get
-            Return "POIM.CRSK.rpt"
+            Return "poim.CRSK.rpt"
         End Get
         Set
             'Do nothing

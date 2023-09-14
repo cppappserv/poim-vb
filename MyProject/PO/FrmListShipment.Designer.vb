@@ -95,7 +95,7 @@ Partial Class FrmListShipment
         'btnClose
         '
         Me.btnClose.AutoSize = False
-        Me.btnClose.Image = Global.POIM.My.Resources.Resources.CLOSE
+        Me.btnClose.Image = Global.poim.My.Resources.Resources.CLOSE
         Me.btnClose.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.btnClose.Name = "btnClose"
         Me.btnClose.Size = New System.Drawing.Size(60, 22)
@@ -108,7 +108,7 @@ Partial Class FrmListShipment
         '
         'btnViewPO
         '
-        Me.btnViewPO.Image = Global.POIM.My.Resources.Resources.search
+        Me.btnViewPO.Image = Global.poim.My.Resources.Resources.search
         Me.btnViewPO.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.btnViewPO.Name = "btnViewPO"
         Me.btnViewPO.Size = New System.Drawing.Size(96, 22)

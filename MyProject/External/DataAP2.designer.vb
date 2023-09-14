@@ -92,7 +92,7 @@ Partial Class DataAP2
         'btnClose
         '
         Me.btnClose.AutoSize = False
-        Me.btnClose.Image = Global.POIM.My.Resources.Resources.CLOSE
+        Me.btnClose.Image = Global.poim.My.Resources.Resources.CLOSE
         Me.btnClose.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.btnClose.Name = "btnClose"
         Me.btnClose.Size = New System.Drawing.Size(60, 22)
@@ -221,7 +221,7 @@ Partial Class DataAP2
         '
         'btnPlant
         '
-        Me.btnPlant.Image = Global.POIM.My.Resources.Resources.search
+        Me.btnPlant.Image = Global.poim.My.Resources.Resources.search
         Me.btnPlant.Location = New System.Drawing.Point(441, 44)
         Me.btnPlant.Name = "btnPlant"
         Me.btnPlant.Size = New System.Drawing.Size(22, 18)
@@ -336,7 +336,7 @@ Partial Class DataAP2
         '
         'btnPlant2
         '
-        Me.btnPlant2.Image = Global.POIM.My.Resources.Resources.search
+        Me.btnPlant2.Image = Global.poim.My.Resources.Resources.search
         Me.btnPlant2.Location = New System.Drawing.Point(441, 44)
         Me.btnPlant2.Name = "btnPlant2"
         Me.btnPlant2.Size = New System.Drawing.Size(22, 18)

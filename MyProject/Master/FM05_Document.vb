@@ -4,7 +4,7 @@
 'Created Date : 23 September 2008
 'Table Used   : tbm_document
 
-Imports POIM.FM02_MaterialGroup
+Imports poim.FM02_MaterialGroup
 
 Public Class FM05_Document
     Dim baru As Boolean

@@ -6,7 +6,7 @@
 'Created Date : 05 Oktober 2008
 'Table Used   : Tbm_Attachment_Document
 
-Imports POIM.FM02_MaterialGroup
+Imports poim.FM02_MaterialGroup
 Public Class FM06_AttachDoc
     Dim baru As Boolean
     Dim edit As Boolean

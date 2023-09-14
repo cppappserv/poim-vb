@@ -61,7 +61,7 @@ Partial Class BAPB_SAP
         'btnClose
         '
         Me.btnClose.AutoSize = False
-        Me.btnClose.Image = Global.POIM.My.Resources.Resources.CLOSE
+        Me.btnClose.Image = Global.poim.My.Resources.Resources.CLOSE
         Me.btnClose.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.btnClose.Name = "btnClose"
         Me.btnClose.Size = New System.Drawing.Size(60, 22)
@@ -152,7 +152,7 @@ Partial Class BAPB_SAP
         '
         'btnFile
         '
-        Me.btnFile.Image = Global.POIM.My.Resources.Resources.search
+        Me.btnFile.Image = Global.poim.My.Resources.Resources.search
         Me.btnFile.Location = New System.Drawing.Point(443, 11)
         Me.btnFile.Name = "btnFile"
         Me.btnFile.Size = New System.Drawing.Size(22, 18)

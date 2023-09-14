@@ -6,7 +6,7 @@
 
 'Imports POIM.FM02_MaterialGroup
 'Imports POIM.FrmDOC_Import
-Imports POIM.FrmPO
+Imports poim.FrmPO
 
 Public Class FrmListPO
     Dim ErrMsg, SQLstr As String

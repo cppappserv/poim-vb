@@ -452,7 +452,7 @@ Partial Class FrmLT
         '
         'btnBL
         '
-        Me.btnBL.Image = Global.POIM.My.Resources.Resources.search
+        Me.btnBL.Image = Global.poim.My.Resources.Resources.search
         Me.btnBL.Location = New System.Drawing.Point(306, 13)
         Me.btnBL.Name = "btnBL"
         Me.btnBL.Size = New System.Drawing.Size(22, 20)
@@ -606,7 +606,7 @@ Partial Class FrmLT
         '
         'btnCurrency
         '
-        Me.btnCurrency.Image = Global.POIM.My.Resources.Resources.search
+        Me.btnCurrency.Image = Global.poim.My.Resources.Resources.search
         Me.btnCurrency.Location = New System.Drawing.Point(182, 84)
         Me.btnCurrency.Name = "btnCurrency"
         Me.btnCurrency.Size = New System.Drawing.Size(22, 20)
@@ -1138,7 +1138,7 @@ Partial Class FrmLT
         'btnClose
         '
         Me.btnClose.AutoSize = False
-        Me.btnClose.Image = Global.POIM.My.Resources.Resources.CLOSE
+        Me.btnClose.Image = Global.poim.My.Resources.Resources.CLOSE
         Me.btnClose.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.btnClose.Name = "btnClose"
         Me.btnClose.Size = New System.Drawing.Size(60, 22)
@@ -1152,7 +1152,7 @@ Partial Class FrmLT
         'btnNew
         '
         Me.btnNew.AutoSize = False
-        Me.btnNew.Image = Global.POIM.My.Resources.Resources.NewDocumentHS
+        Me.btnNew.Image = Global.poim.My.Resources.Resources.NewDocumentHS
         Me.btnNew.Name = "btnNew"
         Me.btnNew.Size = New System.Drawing.Size(60, 22)
         Me.btnNew.Text = "New"
@@ -1165,7 +1165,7 @@ Partial Class FrmLT
         'btnSave
         '
         Me.btnSave.AutoSize = False
-        Me.btnSave.Image = Global.POIM.My.Resources.Resources.SaveHL
+        Me.btnSave.Image = Global.poim.My.Resources.Resources.SaveHL
         Me.btnSave.Name = "btnSave"
         Me.btnSave.Size = New System.Drawing.Size(60, 22)
         Me.btnSave.Text = "Save"
@@ -1179,7 +1179,7 @@ Partial Class FrmLT
         '
         Me.btnDelete.AutoSize = False
         Me.btnDelete.Enabled = False
-        Me.btnDelete.Image = Global.POIM.My.Resources.Resources.delete
+        Me.btnDelete.Image = Global.poim.My.Resources.Resources.delete
         Me.btnDelete.Name = "btnDelete"
         Me.btnDelete.Size = New System.Drawing.Size(60, 22)
         Me.btnDelete.Text = "Delete"

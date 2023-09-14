@@ -165,7 +165,7 @@ Partial Class FM28_CostRates
         'btnViewAll
         '
         Me.btnViewAll.AutoSize = False
-        Me.btnViewAll.Image = Global.POIM.My.Resources.Resources.search
+        Me.btnViewAll.Image = Global.poim.My.Resources.Resources.search
         Me.btnViewAll.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.btnViewAll.Name = "btnViewAll"
         Me.btnViewAll.Size = New System.Drawing.Size(70, 22)
@@ -179,7 +179,7 @@ Partial Class FM28_CostRates
         '
         'btnView
         '
-        Me.btnView.Image = Global.POIM.My.Resources.Resources.search
+        Me.btnView.Image = Global.poim.My.Resources.Resources.search
         Me.btnView.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.btnView.Name = "btnView"
         Me.btnView.Size = New System.Drawing.Size(120, 22)
@@ -632,7 +632,7 @@ Partial Class FM28_CostRates
         '
         'btnSaveToExcell
         '
-        Me.btnSaveToExcell.Image = Global.POIM.My.Resources.Resources.SaveHL
+        Me.btnSaveToExcell.Image = Global.poim.My.Resources.Resources.SaveHL
         Me.btnSaveToExcell.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.btnSaveToExcell.Name = "btnSaveToExcell"
         Me.btnSaveToExcell.Size = New System.Drawing.Size(96, 22)

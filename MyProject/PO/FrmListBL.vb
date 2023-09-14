@@ -4,7 +4,7 @@
 'Created Date : 18 Maret 2009
 'Table Used   : 
 
-Imports POIM.FrmBL
+Imports poim.FrmBL
 
 Public Class FrmListBL
     Dim ErrMsg, SQLstr As String

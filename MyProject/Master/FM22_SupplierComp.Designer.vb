@@ -60,7 +60,7 @@ Partial Class FM22_SupplierComp
         '
         Me.btnDelete.AutoSize = False
         Me.btnDelete.Enabled = False
-        Me.btnDelete.Image = Global.POIM.My.Resources.Resources.delete
+        Me.btnDelete.Image = Global.poim.My.Resources.Resources.delete
         Me.btnDelete.Name = "btnDelete"
         Me.btnDelete.Size = New System.Drawing.Size(60, 22)
         Me.btnDelete.Text = "Delete"
@@ -100,7 +100,7 @@ Partial Class FM22_SupplierComp
         '
         Me.btnSave.AutoSize = False
         Me.btnSave.Enabled = False
-        Me.btnSave.Image = Global.POIM.My.Resources.Resources.SaveHL
+        Me.btnSave.Image = Global.poim.My.Resources.Resources.SaveHL
         Me.btnSave.Name = "btnSave"
         Me.btnSave.Size = New System.Drawing.Size(60, 22)
         Me.btnSave.Text = "Save"
@@ -122,7 +122,7 @@ Partial Class FM22_SupplierComp
         'btnClose
         '
         Me.btnClose.AutoSize = False
-        Me.btnClose.Image = Global.POIM.My.Resources.Resources.CLOSE
+        Me.btnClose.Image = Global.poim.My.Resources.Resources.CLOSE
         Me.btnClose.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.btnClose.Name = "btnClose"
         Me.btnClose.Size = New System.Drawing.Size(60, 22)
@@ -136,7 +136,7 @@ Partial Class FM22_SupplierComp
         'btnNew
         '
         Me.btnNew.AutoSize = False
-        Me.btnNew.Image = Global.POIM.My.Resources.Resources.NewDocumentHS
+        Me.btnNew.Image = Global.poim.My.Resources.Resources.NewDocumentHS
         Me.btnNew.Name = "btnNew"
         Me.btnNew.Size = New System.Drawing.Size(60, 22)
         Me.btnNew.Text = "New"
@@ -176,7 +176,7 @@ Partial Class FM22_SupplierComp
         '
         'BttnCompanyHelp
         '
-        Me.BttnCompanyHelp.Image = Global.POIM.My.Resources.Resources.search
+        Me.BttnCompanyHelp.Image = Global.poim.My.Resources.Resources.search
         Me.BttnCompanyHelp.Location = New System.Drawing.Point(186, 38)
         Me.BttnCompanyHelp.Name = "BttnCompanyHelp"
         Me.BttnCompanyHelp.Size = New System.Drawing.Size(22, 18)
@@ -194,7 +194,7 @@ Partial Class FM22_SupplierComp
         '
         'btnSearchSupp
         '
-        Me.btnSearchSupp.Image = Global.POIM.My.Resources.Resources.search
+        Me.btnSearchSupp.Image = Global.poim.My.Resources.Resources.search
         Me.btnSearchSupp.Location = New System.Drawing.Point(186, 15)
         Me.btnSearchSupp.Name = "btnSearchSupp"
         Me.btnSearchSupp.Size = New System.Drawing.Size(22, 20)

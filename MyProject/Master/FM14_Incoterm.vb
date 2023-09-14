@@ -4,7 +4,7 @@
 'Created Date : Oktober 2008
 'Table Used   : tbm_insurance
 
-Imports POIM.FM02_MaterialGroup
+Imports poim.FM02_MaterialGroup
 Public Class FM14_Incoterm
     Dim baru As Boolean
     Dim edit As Boolean

@@ -152,7 +152,7 @@ Partial Class FrmSHIN
         '
         'btnDelNote
         '
-        Me.btnDelNote.Image = Global.POIM.My.Resources.Resources.deleteS1
+        Me.btnDelNote.Image = Global.poim.My.Resources.Resources.deleteS1
         Me.btnDelNote.Location = New System.Drawing.Point(806, 150)
         Me.btnDelNote.Name = "btnDelNote"
         Me.btnDelNote.Size = New System.Drawing.Size(22, 22)
@@ -162,7 +162,7 @@ Partial Class FrmSHIN
         '
         'btnNote
         '
-        Me.btnNote.Image = Global.POIM.My.Resources.Resources.history
+        Me.btnNote.Image = Global.poim.My.Resources.Resources.history
         Me.btnNote.Location = New System.Drawing.Point(806, 126)
         Me.btnNote.Name = "btnNote"
         Me.btnNote.Size = New System.Drawing.Size(22, 22)
@@ -199,7 +199,7 @@ Partial Class FrmSHIN
         '
         'btnD
         '
-        Me.btnD.Image = Global.POIM.My.Resources.Resources.history
+        Me.btnD.Image = Global.poim.My.Resources.Resources.history
         Me.btnD.Location = New System.Drawing.Point(388, 120)
         Me.btnD.Name = "btnD"
         Me.btnD.Size = New System.Drawing.Size(22, 22)
@@ -209,7 +209,7 @@ Partial Class FrmSHIN
         '
         'btnDelAddress
         '
-        Me.btnDelAddress.Image = Global.POIM.My.Resources.Resources.deleteS1
+        Me.btnDelAddress.Image = Global.poim.My.Resources.Resources.deleteS1
         Me.btnDelAddress.Location = New System.Drawing.Point(806, 58)
         Me.btnDelAddress.Name = "btnDelAddress"
         Me.btnDelAddress.Size = New System.Drawing.Size(22, 22)
@@ -219,7 +219,7 @@ Partial Class FrmSHIN
         '
         'btnAddress
         '
-        Me.btnAddress.Image = Global.POIM.My.Resources.Resources.history
+        Me.btnAddress.Image = Global.poim.My.Resources.Resources.history
         Me.btnAddress.Location = New System.Drawing.Point(806, 36)
         Me.btnAddress.Name = "btnAddress"
         Me.btnAddress.Size = New System.Drawing.Size(22, 22)
@@ -229,7 +229,7 @@ Partial Class FrmSHIN
         '
         'btnDelFooter
         '
-        Me.btnDelFooter.Image = Global.POIM.My.Resources.Resources.deleteS1
+        Me.btnDelFooter.Image = Global.poim.My.Resources.Resources.deleteS1
         Me.btnDelFooter.Location = New System.Drawing.Point(388, 194)
         Me.btnDelFooter.Name = "btnDelFooter"
         Me.btnDelFooter.Size = New System.Drawing.Size(22, 22)
@@ -239,7 +239,7 @@ Partial Class FrmSHIN
         '
         'btnFooter
         '
-        Me.btnFooter.Image = Global.POIM.My.Resources.Resources.history
+        Me.btnFooter.Image = Global.poim.My.Resources.Resources.history
         Me.btnFooter.Location = New System.Drawing.Point(388, 172)
         Me.btnFooter.Name = "btnFooter"
         Me.btnFooter.Size = New System.Drawing.Size(22, 22)
@@ -268,7 +268,7 @@ Partial Class FrmSHIN
         '
         'btnClearL
         '
-        Me.btnClearL.Image = Global.POIM.My.Resources.Resources.deleteS1
+        Me.btnClearL.Image = Global.poim.My.Resources.Resources.deleteS1
         Me.btnClearL.Location = New System.Drawing.Point(806, 212)
         Me.btnClearL.Name = "btnClearL"
         Me.btnClearL.Size = New System.Drawing.Size(22, 22)
@@ -279,7 +279,7 @@ Partial Class FrmSHIN
         '
         'btnClearD
         '
-        Me.btnClearD.Image = Global.POIM.My.Resources.Resources.deleteS1
+        Me.btnClearD.Image = Global.poim.My.Resources.Resources.deleteS1
         Me.btnClearD.Location = New System.Drawing.Point(388, 141)
         Me.btnClearD.Name = "btnClearD"
         Me.btnClearD.Size = New System.Drawing.Size(22, 22)
@@ -362,7 +362,7 @@ Partial Class FrmSHIN
         '
         'btnSearchL
         '
-        Me.btnSearchL.Image = Global.POIM.My.Resources.Resources.search
+        Me.btnSearchL.Image = Global.poim.My.Resources.Resources.search
         Me.btnSearchL.Location = New System.Drawing.Point(806, 190)
         Me.btnSearchL.Name = "btnSearchL"
         Me.btnSearchL.Size = New System.Drawing.Size(22, 22)
@@ -465,7 +465,7 @@ Partial Class FrmSHIN
         '
         'Button3
         '
-        Me.Button3.Image = Global.POIM.My.Resources.Resources.search
+        Me.Button3.Image = Global.poim.My.Resources.Resources.search
         Me.Button3.Location = New System.Drawing.Point(255, 288)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(22, 18)
@@ -492,7 +492,7 @@ Partial Class FrmSHIN
         '
         'btnSearchD
         '
-        Me.btnSearchD.Image = Global.POIM.My.Resources.Resources.search
+        Me.btnSearchD.Image = Global.poim.My.Resources.Resources.search
         Me.btnSearchD.Location = New System.Drawing.Point(388, 99)
         Me.btnSearchD.Name = "btnSearchD"
         Me.btnSearchD.Size = New System.Drawing.Size(22, 22)
@@ -548,7 +548,7 @@ Partial Class FrmSHIN
         'btnClose
         '
         Me.btnClose.AutoSize = False
-        Me.btnClose.Image = Global.POIM.My.Resources.Resources.CLOSE
+        Me.btnClose.Image = Global.poim.My.Resources.Resources.CLOSE
         Me.btnClose.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.btnClose.Name = "btnClose"
         Me.btnClose.Size = New System.Drawing.Size(60, 22)
@@ -562,7 +562,7 @@ Partial Class FrmSHIN
         'btnSave
         '
         Me.btnSave.AutoSize = False
-        Me.btnSave.Image = Global.POIM.My.Resources.Resources.SaveHL
+        Me.btnSave.Image = Global.poim.My.Resources.Resources.SaveHL
         Me.btnSave.Name = "btnSave"
         Me.btnSave.Size = New System.Drawing.Size(60, 22)
         Me.btnSave.Text = "Save"
@@ -575,7 +575,7 @@ Partial Class FrmSHIN
         'btnReject
         '
         Me.btnReject.AutoSize = False
-        Me.btnReject.Image = Global.POIM.My.Resources.Resources.delete
+        Me.btnReject.Image = Global.poim.My.Resources.Resources.delete
         Me.btnReject.Name = "btnReject"
         Me.btnReject.Size = New System.Drawing.Size(60, 22)
         Me.btnReject.Text = "Reject"

@@ -4,7 +4,7 @@
 'Created Date : 23 September 2008
 'Table Used   : tbm_material, tbm_material_group, tbm_Material_Origin
 
-Imports POIM.FM02_MaterialGroup
+Imports poim.FM02_MaterialGroup
 Public Class FM04_Material_Origin
     Dim baru As Boolean
     Dim edit As Boolean

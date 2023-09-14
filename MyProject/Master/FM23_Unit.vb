@@ -6,7 +6,7 @@
 'Table Used   : tbm_unit
 'modifed by   : Hanny - 5 nov 2008
 
-Imports POIM.FM02_MaterialGroup
+Imports poim.FM02_MaterialGroup
 
 Public Class FM23_Unit
     Dim baru As Boolean

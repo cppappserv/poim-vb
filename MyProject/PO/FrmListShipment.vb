@@ -1,5 +1,5 @@
 ﻿'Title        : List Shipment
-Imports POIM.frmBAPB
+Imports poim.frmBAPB
 
 Public Class FrmListShipment
     Dim ErrMsg, SQLstr As String

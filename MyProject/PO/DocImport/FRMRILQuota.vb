@@ -1,4 +1,4 @@
-﻿Imports POIM.FrmDOC_Import
+﻿Imports poim.FrmDOC_Import
 Public Class FRMRILQuota
     Dim v_type As String
     Dim NomUrut As Integer

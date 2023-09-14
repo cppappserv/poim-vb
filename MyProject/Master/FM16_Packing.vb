@@ -5,7 +5,7 @@
 'Created Date : 05 Oktober 2008
 'Table Used   : tbm_packing
 
-Imports POIM.FM02_MaterialGroup
+Imports poim.FM02_MaterialGroup
 
 Public Class FM16_Packing
     Dim baru As Boolean

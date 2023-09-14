@@ -53,7 +53,7 @@ Partial Class FrmSettingAksesUser
         '
         'btnPilihKodeUser
         '
-        Me.btnPilihKodeUser.Image = Global.POIM.My.Resources.Resources.search
+        Me.btnPilihKodeUser.Image = Global.poim.My.Resources.Resources.search
         Me.btnPilihKodeUser.Location = New System.Drawing.Point(187, 12)
         Me.btnPilihKodeUser.Name = "btnPilihKodeUser"
         Me.btnPilihKodeUser.Size = New System.Drawing.Size(30, 23)

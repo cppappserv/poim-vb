@@ -4,7 +4,7 @@
 'Created Date : September 2008
 'Table Used   : tbm_currency
 
-Imports POIM.FM02_MaterialGroup
+Imports poim.FM02_MaterialGroup
 Public Class FM10_Currency
     Dim baru As Boolean
     Dim edit As Boolean

@@ -63,7 +63,7 @@ Partial Class FM20_Port
         'btnNew
         '
         Me.btnNew.AutoSize = False
-        Me.btnNew.Image = Global.POIM.My.Resources.Resources.NewDocumentHS
+        Me.btnNew.Image = Global.poim.My.Resources.Resources.NewDocumentHS
         Me.btnNew.Name = "btnNew"
         Me.btnNew.Size = New System.Drawing.Size(60, 22)
         Me.btnNew.Text = "New"
@@ -82,7 +82,7 @@ Partial Class FM20_Port
         '
         Me.btnSave.AutoSize = False
         Me.btnSave.Enabled = False
-        Me.btnSave.Image = Global.POIM.My.Resources.Resources.SaveHL
+        Me.btnSave.Image = Global.poim.My.Resources.Resources.SaveHL
         Me.btnSave.Name = "btnSave"
         Me.btnSave.Size = New System.Drawing.Size(60, 22)
         Me.btnSave.Text = "Save"
@@ -90,7 +90,7 @@ Partial Class FM20_Port
         'btnClose
         '
         Me.btnClose.AutoSize = False
-        Me.btnClose.Image = Global.POIM.My.Resources.Resources.CLOSE
+        Me.btnClose.Image = Global.poim.My.Resources.Resources.CLOSE
         Me.btnClose.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.btnClose.Name = "btnClose"
         Me.btnClose.Size = New System.Drawing.Size(60, 22)
@@ -100,7 +100,7 @@ Partial Class FM20_Port
         '
         Me.btnDelete.AutoSize = False
         Me.btnDelete.Enabled = False
-        Me.btnDelete.Image = Global.POIM.My.Resources.Resources.delete
+        Me.btnDelete.Image = Global.poim.My.Resources.Resources.delete
         Me.btnDelete.Name = "btnDelete"
         Me.btnDelete.Size = New System.Drawing.Size(60, 22)
         Me.btnDelete.Text = "Delete"
@@ -187,7 +187,7 @@ Partial Class FM20_Port
         '
         'btnSearchCity
         '
-        Me.btnSearchCity.Image = Global.POIM.My.Resources.Resources.search
+        Me.btnSearchCity.Image = Global.poim.My.Resources.Resources.search
         Me.btnSearchCity.Location = New System.Drawing.Point(186, 107)
         Me.btnSearchCity.Name = "btnSearchCity"
         Me.btnSearchCity.Size = New System.Drawing.Size(22, 20)
@@ -302,7 +302,7 @@ Partial Class FM20_Port
         'btnSearchCountry
         '
         Me.btnSearchCountry.Enabled = False
-        Me.btnSearchCountry.Image = Global.POIM.My.Resources.Resources.search
+        Me.btnSearchCountry.Image = Global.poim.My.Resources.Resources.search
         Me.btnSearchCountry.Location = New System.Drawing.Point(186, 129)
         Me.btnSearchCountry.Name = "btnSearchCountry"
         Me.btnSearchCountry.Size = New System.Drawing.Size(22, 20)
