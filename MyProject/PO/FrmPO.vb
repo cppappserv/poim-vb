@@ -5,7 +5,7 @@
 'Table Used   : 
 
 'Imports POIM.FM02_MaterialGroup
-Imports POIM.FrmDOC_Import
+Imports poim.FrmDOC_Import
 Public Class FrmPO
     Dim baru As Boolean
     Dim edit As Boolean

@@ -7,7 +7,7 @@
 'Created Date : 25 September 2008
 'Table Used   : tbm_port
 
-Imports POIM.FM02_MaterialGroup
+Imports poim.FM02_MaterialGroup
 Public Class FM20_Port
     Dim baru As Boolean
     Dim edit As Boolean

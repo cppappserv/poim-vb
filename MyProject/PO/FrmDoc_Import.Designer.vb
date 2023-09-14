@@ -131,7 +131,7 @@ Partial Class FrmDOC_Import
         'btnClose
         '
         Me.btnClose.AutoSize = False
-        Me.btnClose.Image = Global.POIM.My.Resources.Resources.CLOSE
+        Me.btnClose.Image = Global.poim.My.Resources.Resources.CLOSE
         Me.btnClose.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.btnClose.Name = "btnClose"
         Me.btnClose.Size = New System.Drawing.Size(60, 22)

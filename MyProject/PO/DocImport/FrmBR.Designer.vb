@@ -172,7 +172,7 @@ Partial Class FrmBR
         '
         'Button4
         '
-        Me.Button4.Image = Global.POIM.My.Resources.Resources.search
+        Me.Button4.Image = Global.poim.My.Resources.Resources.search
         Me.Button4.Location = New System.Drawing.Point(250, 273)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(22, 18)
@@ -200,7 +200,7 @@ Partial Class FrmBR
         '
         'Button3
         '
-        Me.Button3.Image = Global.POIM.My.Resources.Resources.search
+        Me.Button3.Image = Global.poim.My.Resources.Resources.search
         Me.Button3.Location = New System.Drawing.Point(250, 250)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(22, 18)
@@ -388,7 +388,7 @@ Partial Class FrmBR
         '
         'btnSearch
         '
-        Me.btnSearch.Image = Global.POIM.My.Resources.Resources.search
+        Me.btnSearch.Image = Global.poim.My.Resources.Resources.search
         Me.btnSearch.Location = New System.Drawing.Point(152, 42)
         Me.btnSearch.Name = "btnSearch"
         Me.btnSearch.Size = New System.Drawing.Size(22, 18)
@@ -436,7 +436,7 @@ Partial Class FrmBR
         'btnClose
         '
         Me.btnClose.AutoSize = False
-        Me.btnClose.Image = Global.POIM.My.Resources.Resources.CLOSE
+        Me.btnClose.Image = Global.poim.My.Resources.Resources.CLOSE
         Me.btnClose.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.btnClose.Name = "btnClose"
         Me.btnClose.Size = New System.Drawing.Size(60, 22)
@@ -450,7 +450,7 @@ Partial Class FrmBR
         'btnSave
         '
         Me.btnSave.AutoSize = False
-        Me.btnSave.Image = Global.POIM.My.Resources.Resources.SaveHL
+        Me.btnSave.Image = Global.poim.My.Resources.Resources.SaveHL
         Me.btnSave.Name = "btnSave"
         Me.btnSave.Size = New System.Drawing.Size(60, 22)
         Me.btnSave.Text = "Save"
@@ -463,7 +463,7 @@ Partial Class FrmBR
         'btnReject
         '
         Me.btnReject.AutoSize = False
-        Me.btnReject.Image = Global.POIM.My.Resources.Resources.delete
+        Me.btnReject.Image = Global.poim.My.Resources.Resources.delete
         Me.btnReject.Name = "btnReject"
         Me.btnReject.Size = New System.Drawing.Size(60, 22)
         Me.btnReject.Text = "Reject"

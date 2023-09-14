@@ -77,7 +77,7 @@ Partial Class FM30_Produsen
         'btnClose
         '
         Me.btnClose.AutoSize = False
-        Me.btnClose.Image = Global.POIM.My.Resources.Resources.Critical
+        Me.btnClose.Image = Global.poim.My.Resources.Resources.Critical
         Me.btnClose.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.btnClose.Name = "btnClose"
         Me.btnClose.Size = New System.Drawing.Size(60, 22)
@@ -91,7 +91,7 @@ Partial Class FM30_Produsen
         'btnNew
         '
         Me.btnNew.AutoSize = False
-        Me.btnNew.Image = Global.POIM.My.Resources.Resources.NewDocumentHS
+        Me.btnNew.Image = Global.poim.My.Resources.Resources.NewDocumentHS
         Me.btnNew.Name = "btnNew"
         Me.btnNew.Size = New System.Drawing.Size(60, 22)
         Me.btnNew.Text = "New"
@@ -105,7 +105,7 @@ Partial Class FM30_Produsen
         '
         Me.btnSave.AutoSize = False
         Me.btnSave.Enabled = False
-        Me.btnSave.Image = Global.POIM.My.Resources.Resources.SaveHL
+        Me.btnSave.Image = Global.poim.My.Resources.Resources.SaveHL
         Me.btnSave.Name = "btnSave"
         Me.btnSave.Size = New System.Drawing.Size(60, 22)
         Me.btnSave.Text = "Save"
@@ -119,7 +119,7 @@ Partial Class FM30_Produsen
         '
         Me.btnDelete.AutoSize = False
         Me.btnDelete.Enabled = False
-        Me.btnDelete.Image = Global.POIM.My.Resources.Resources.delete
+        Me.btnDelete.Image = Global.poim.My.Resources.Resources.delete
         Me.btnDelete.Name = "btnDelete"
         Me.btnDelete.Size = New System.Drawing.Size(60, 22)
         Me.btnDelete.Text = "Delete"
@@ -187,7 +187,7 @@ Partial Class FM30_Produsen
         '
         'Button1
         '
-        Me.Button1.Image = Global.POIM.My.Resources.Resources.search
+        Me.Button1.Image = Global.poim.My.Resources.Resources.search
         Me.Button1.Location = New System.Drawing.Point(192, 86)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(22, 18)

@@ -6,7 +6,7 @@
 'Created Date : 23 September 2008
 'Table Used   : tbm_company, tbm_city
 
-Imports POIM.FM02_MaterialGroup
+Imports poim.FM02_MaterialGroup
 Public Class FM09_Company
     Dim baru As Boolean
     Dim edit As Boolean

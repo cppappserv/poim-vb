@@ -8,7 +8,7 @@ Imports vbs = Microsoft.VisualBasic.Strings
 Imports xlns = Microsoft.Office.Interop.Excel
 Imports System.Management
 Imports System.Text.RegularExpressions
-Imports POIM.FM21_Supplier
+Imports poim.FM21_Supplier
 Public Class FM21_Supplier
     Dim baru As Boolean
     Dim edit As Boolean

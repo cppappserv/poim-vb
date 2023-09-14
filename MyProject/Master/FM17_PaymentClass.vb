@@ -5,7 +5,7 @@
 'Created Date : 23 September 2008
 'Table Used   : tbm_payment_class
 
-Imports POIM.FM02_MaterialGroup
+Imports poim.FM02_MaterialGroup
 
 Public Class FM17_PaymentClass
     Dim baru As Boolean

@@ -58,7 +58,7 @@ Partial Class FM13_BankReff
         'btnClose
         '
         Me.btnClose.AutoSize = False
-        Me.btnClose.Image = Global.POIM.My.Resources.Resources.CLOSE
+        Me.btnClose.Image = Global.poim.My.Resources.Resources.CLOSE
         Me.btnClose.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.btnClose.Name = "btnClose"
         Me.btnClose.Size = New System.Drawing.Size(60, 22)
@@ -72,7 +72,7 @@ Partial Class FM13_BankReff
         'btnNew
         '
         Me.btnNew.AutoSize = False
-        Me.btnNew.Image = Global.POIM.My.Resources.Resources.NewDocumentHS
+        Me.btnNew.Image = Global.poim.My.Resources.Resources.NewDocumentHS
         Me.btnNew.Name = "btnNew"
         Me.btnNew.Size = New System.Drawing.Size(60, 22)
         Me.btnNew.Text = "New"
@@ -86,7 +86,7 @@ Partial Class FM13_BankReff
         '
         Me.btnSave.AutoSize = False
         Me.btnSave.Enabled = False
-        Me.btnSave.Image = Global.POIM.My.Resources.Resources.SaveHL
+        Me.btnSave.Image = Global.poim.My.Resources.Resources.SaveHL
         Me.btnSave.Name = "btnSave"
         Me.btnSave.Size = New System.Drawing.Size(60, 22)
         Me.btnSave.Text = "Save"
@@ -100,7 +100,7 @@ Partial Class FM13_BankReff
         '
         Me.btnDelete.AutoSize = False
         Me.btnDelete.Enabled = False
-        Me.btnDelete.Image = Global.POIM.My.Resources.Resources.delete
+        Me.btnDelete.Image = Global.poim.My.Resources.Resources.delete
         Me.btnDelete.Name = "btnDelete"
         Me.btnDelete.Size = New System.Drawing.Size(60, 22)
         Me.btnDelete.Text = "Delete"
@@ -132,7 +132,7 @@ Partial Class FM13_BankReff
         '
         'btnSearchBank
         '
-        Me.btnSearchBank.Image = Global.POIM.My.Resources.Resources.search
+        Me.btnSearchBank.Image = Global.poim.My.Resources.Resources.search
         Me.btnSearchBank.Location = New System.Drawing.Point(243, 38)
         Me.btnSearchBank.Name = "btnSearchBank"
         Me.btnSearchBank.Size = New System.Drawing.Size(22, 20)
@@ -141,7 +141,7 @@ Partial Class FM13_BankReff
         '
         'btnSearchCompany
         '
-        Me.btnSearchCompany.Image = Global.POIM.My.Resources.Resources.search
+        Me.btnSearchCompany.Image = Global.poim.My.Resources.Resources.search
         Me.btnSearchCompany.Location = New System.Drawing.Point(243, 15)
         Me.btnSearchCompany.Name = "btnSearchCompany"
         Me.btnSearchCompany.Size = New System.Drawing.Size(22, 20)

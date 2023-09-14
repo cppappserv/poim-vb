@@ -148,7 +148,7 @@ Partial Class FrmCD
         '
         'btnSearchCompany
         '
-        Me.btnSearchCompany.Image = Global.POIM.My.Resources.Resources.search
+        Me.btnSearchCompany.Image = Global.poim.My.Resources.Resources.search
         Me.btnSearchCompany.Location = New System.Drawing.Point(191, 110)
         Me.btnSearchCompany.Name = "btnSearchCompany"
         Me.btnSearchCompany.Size = New System.Drawing.Size(22, 18)
@@ -186,7 +186,7 @@ Partial Class FrmCD
         'btnClose
         '
         Me.btnClose.AutoSize = False
-        Me.btnClose.Image = Global.POIM.My.Resources.Resources.CLOSE
+        Me.btnClose.Image = Global.poim.My.Resources.Resources.CLOSE
         Me.btnClose.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.btnClose.Name = "btnClose"
         Me.btnClose.Size = New System.Drawing.Size(60, 22)
@@ -199,7 +199,7 @@ Partial Class FrmCD
         '
         'btnNew
         '
-        Me.btnNew.Image = Global.POIM.My.Resources.Resources.NewDocumentHS
+        Me.btnNew.Image = Global.poim.My.Resources.Resources.NewDocumentHS
         Me.btnNew.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.btnNew.Name = "btnNew"
         Me.btnNew.Size = New System.Drawing.Size(48, 22)
@@ -214,7 +214,7 @@ Partial Class FrmCD
         '
         Me.btnSave.AutoSize = False
         Me.btnSave.Enabled = False
-        Me.btnSave.Image = Global.POIM.My.Resources.Resources.SaveHL
+        Me.btnSave.Image = Global.poim.My.Resources.Resources.SaveHL
         Me.btnSave.Name = "btnSave"
         Me.btnSave.Size = New System.Drawing.Size(60, 22)
         Me.btnSave.Text = "Save"
@@ -228,7 +228,7 @@ Partial Class FrmCD
         '
         Me.btnReject.AutoSize = False
         Me.btnReject.Enabled = False
-        Me.btnReject.Image = Global.POIM.My.Resources.Resources.delete
+        Me.btnReject.Image = Global.poim.My.Resources.Resources.delete
         Me.btnReject.Name = "btnReject"
         Me.btnReject.Size = New System.Drawing.Size(60, 22)
         Me.btnReject.Text = "Delete"

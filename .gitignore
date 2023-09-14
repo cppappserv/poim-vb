@@ -1,3 +1,9 @@
 \MyProject\bin
 \MyProject\Service References
 \MyProject\obj
+\BPUtility\bin
+\BPUtility\bin\Debug
+\BPUtility\obj
+\BPConnection\bin
+\BPConnection\bin\Debug
+\BPConnection\obj

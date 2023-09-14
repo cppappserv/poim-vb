@@ -168,7 +168,7 @@ Partial Class FrmSettingUser
         '
         'BtnCari
         '
-        Me.BtnCari.Image = Global.POIM.My.Resources.Resources.search
+        Me.BtnCari.Image = Global.poim.My.Resources.Resources.search
         Me.BtnCari.Location = New System.Drawing.Point(289, 22)
         Me.BtnCari.Name = "BtnCari"
         Me.BtnCari.Size = New System.Drawing.Size(25, 23)

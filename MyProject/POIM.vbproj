@@ -8,8 +8,8 @@
     <ProjectGuid>{F1B17A04-1FD0-4B84-9403-76E4C5A729E8}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <StartupObject>Sub Main</StartupObject>
-    <RootNamespace>POIM</RootNamespace>
-    <AssemblyName>POIM</AssemblyName>
+    <RootNamespace>poim</RootNamespace>
+    <AssemblyName>poim</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsFormsWithCustomSubMain</MyType>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
@@ -44,7 +44,7 @@
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <OutputPath>bin\Debug\</OutputPath>
-    <DocumentationFile>POIM.xml</DocumentationFile>
+    <DocumentationFile>poim.xml</DocumentationFile>
     <NoWarn>
     </NoWarn>
     <WarningsAsErrors>42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
@@ -56,7 +56,7 @@
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DocumentationFile>POIM.xml</DocumentationFile>
+    <DocumentationFile>poim.xml</DocumentationFile>
     <NoWarn>
     </NoWarn>
     <WarningsAsErrors>42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>

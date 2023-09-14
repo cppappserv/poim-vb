@@ -65,7 +65,7 @@ Partial Class FM04_Material_Origin
         '
         'btnSearch
         '
-        Me.btnSearch.Image = Global.POIM.My.Resources.Resources.search
+        Me.btnSearch.Image = Global.poim.My.Resources.Resources.search
         Me.btnSearch.Location = New System.Drawing.Point(186, 36)
         Me.btnSearch.Name = "btnSearch"
         Me.btnSearch.Size = New System.Drawing.Size(22, 18)
@@ -185,7 +185,7 @@ Partial Class FM04_Material_Origin
         'btnNew
         '
         Me.btnNew.AutoSize = False
-        Me.btnNew.Image = Global.POIM.My.Resources.Resources.NewDocumentHS
+        Me.btnNew.Image = Global.poim.My.Resources.Resources.NewDocumentHS
         Me.btnNew.Name = "btnNew"
         Me.btnNew.Size = New System.Drawing.Size(60, 22)
         Me.btnNew.Text = "New"
@@ -198,7 +198,7 @@ Partial Class FM04_Material_Origin
         'btnClose
         '
         Me.btnClose.AutoSize = False
-        Me.btnClose.Image = Global.POIM.My.Resources.Resources.CLOSE
+        Me.btnClose.Image = Global.poim.My.Resources.Resources.CLOSE
         Me.btnClose.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.btnClose.Name = "btnClose"
         Me.btnClose.Size = New System.Drawing.Size(60, 22)
@@ -222,7 +222,7 @@ Partial Class FM04_Material_Origin
         '
         Me.btnSave.AutoSize = False
         Me.btnSave.Enabled = False
-        Me.btnSave.Image = Global.POIM.My.Resources.Resources.SaveHL
+        Me.btnSave.Image = Global.poim.My.Resources.Resources.SaveHL
         Me.btnSave.Name = "btnSave"
         Me.btnSave.Size = New System.Drawing.Size(60, 22)
         Me.btnSave.Text = "Save"
@@ -236,7 +236,7 @@ Partial Class FM04_Material_Origin
         '
         Me.btnDelete.AutoSize = False
         Me.btnDelete.Enabled = False
-        Me.btnDelete.Image = Global.POIM.My.Resources.Resources.delete
+        Me.btnDelete.Image = Global.poim.My.Resources.Resources.delete
         Me.btnDelete.Name = "btnDelete"
         Me.btnDelete.Size = New System.Drawing.Size(60, 22)
         Me.btnDelete.Text = "Delete"
@@ -298,7 +298,7 @@ Partial Class FM04_Material_Origin
         '
         'btnSearchMat
         '
-        Me.btnSearchMat.Image = Global.POIM.My.Resources.Resources.search
+        Me.btnSearchMat.Image = Global.poim.My.Resources.Resources.search
         Me.btnSearchMat.Location = New System.Drawing.Point(186, 15)
         Me.btnSearchMat.Name = "btnSearchMat"
         Me.btnSearchMat.Size = New System.Drawing.Size(22, 18)

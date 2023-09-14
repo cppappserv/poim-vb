@@ -96,7 +96,7 @@ Partial Class FrmListBL
         'btnClose
         '
         Me.btnClose.AutoSize = False
-        Me.btnClose.Image = Global.POIM.My.Resources.Resources.CLOSE
+        Me.btnClose.Image = Global.poim.My.Resources.Resources.CLOSE
         Me.btnClose.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.btnClose.Name = "btnClose"
         Me.btnClose.Size = New System.Drawing.Size(60, 22)
@@ -110,7 +110,7 @@ Partial Class FrmListBL
         'btnViewBL
         '
         Me.btnViewBL.Enabled = False
-        Me.btnViewBL.Image = Global.POIM.My.Resources.Resources.search
+        Me.btnViewBL.Image = Global.poim.My.Resources.Resources.search
         Me.btnViewBL.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.btnViewBL.Name = "btnViewBL"
         Me.btnViewBL.Size = New System.Drawing.Size(73, 22)

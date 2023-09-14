@@ -3,7 +3,7 @@
 'Modified by   : Hanny 
 'Last Modified : 04/11/2008
 
-Imports POIM.FM02_MaterialGroup
+Imports poim.FM02_MaterialGroup
 Public Class FM08_City
     Dim baru As Boolean
     Dim edit As Boolean

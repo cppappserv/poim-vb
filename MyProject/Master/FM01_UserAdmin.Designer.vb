@@ -77,7 +77,7 @@ Partial Class FM01_UserAdmin
         'btnClose
         '
         Me.btnClose.AutoSize = False
-        Me.btnClose.Image = Global.POIM.My.Resources.Resources.Critical
+        Me.btnClose.Image = Global.poim.My.Resources.Resources.Critical
         Me.btnClose.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.btnClose.Name = "btnClose"
         Me.btnClose.Size = New System.Drawing.Size(60, 22)
@@ -91,7 +91,7 @@ Partial Class FM01_UserAdmin
         'btnNew
         '
         Me.btnNew.AutoSize = False
-        Me.btnNew.Image = Global.POIM.My.Resources.Resources.NewDocumentHS
+        Me.btnNew.Image = Global.poim.My.Resources.Resources.NewDocumentHS
         Me.btnNew.Name = "btnNew"
         Me.btnNew.Size = New System.Drawing.Size(60, 22)
         Me.btnNew.Text = "New"
@@ -104,7 +104,7 @@ Partial Class FM01_UserAdmin
         'btnSave
         '
         Me.btnSave.AutoSize = False
-        Me.btnSave.Image = Global.POIM.My.Resources.Resources.SaveHL
+        Me.btnSave.Image = Global.poim.My.Resources.Resources.SaveHL
         Me.btnSave.Name = "btnSave"
         Me.btnSave.Size = New System.Drawing.Size(60, 22)
         Me.btnSave.Text = "Save"
@@ -117,7 +117,7 @@ Partial Class FM01_UserAdmin
         'btnDelete
         '
         Me.btnDelete.AutoSize = False
-        Me.btnDelete.Image = Global.POIM.My.Resources.Resources.delete
+        Me.btnDelete.Image = Global.poim.My.Resources.Resources.delete
         Me.btnDelete.Name = "btnDelete"
         Me.btnDelete.Size = New System.Drawing.Size(60, 22)
         Me.btnDelete.Text = "Delete"
@@ -253,7 +253,7 @@ Partial Class FM01_UserAdmin
         '
         'btnSearch
         '
-        Me.btnSearch.Image = Global.POIM.My.Resources.Resources.search
+        Me.btnSearch.Image = Global.poim.My.Resources.Resources.search
         Me.btnSearch.Location = New System.Drawing.Point(284, 38)
         Me.btnSearch.Name = "btnSearch"
         Me.btnSearch.Size = New System.Drawing.Size(22, 20)

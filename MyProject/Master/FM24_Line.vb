@@ -7,7 +7,7 @@
 'Table Used   : tbm_lines, tbm_city
 'modified by  : Hanny - 5 nov 08
 
-Imports POIM.FM02_MaterialGroup
+Imports poim.FM02_MaterialGroup
 Public Class FM24_Line
     Dim baru As Boolean
     Dim edit As Boolean

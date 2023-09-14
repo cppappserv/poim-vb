@@ -92,7 +92,7 @@ Partial Class FrmTT
         'btnClose
         '
         Me.btnClose.AutoSize = False
-        Me.btnClose.Image = Global.POIM.My.Resources.Resources.CLOSE
+        Me.btnClose.Image = Global.poim.My.Resources.Resources.CLOSE
         Me.btnClose.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.btnClose.Name = "btnClose"
         Me.btnClose.Size = New System.Drawing.Size(60, 22)
@@ -106,7 +106,7 @@ Partial Class FrmTT
         'btnSave
         '
         Me.btnSave.AutoSize = False
-        Me.btnSave.Image = Global.POIM.My.Resources.Resources.SaveHL
+        Me.btnSave.Image = Global.poim.My.Resources.Resources.SaveHL
         Me.btnSave.Name = "btnSave"
         Me.btnSave.Size = New System.Drawing.Size(60, 22)
         Me.btnSave.Text = "Save"
@@ -119,7 +119,7 @@ Partial Class FrmTT
         'btnReject
         '
         Me.btnReject.AutoSize = False
-        Me.btnReject.Image = Global.POIM.My.Resources.Resources.delete
+        Me.btnReject.Image = Global.poim.My.Resources.Resources.delete
         Me.btnReject.Name = "btnReject"
         Me.btnReject.Size = New System.Drawing.Size(60, 22)
         Me.btnReject.Text = "Reject"
@@ -223,7 +223,7 @@ Partial Class FrmTT
         '
         'Button4
         '
-        Me.Button4.Image = Global.POIM.My.Resources.Resources.search
+        Me.Button4.Image = Global.poim.My.Resources.Resources.search
         Me.Button4.Location = New System.Drawing.Point(249, 252)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(22, 18)
@@ -270,7 +270,7 @@ Partial Class FrmTT
         '
         'Button3
         '
-        Me.Button3.Image = Global.POIM.My.Resources.Resources.search
+        Me.Button3.Image = Global.poim.My.Resources.Resources.search
         Me.Button3.Location = New System.Drawing.Point(247, 226)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(22, 18)
@@ -379,7 +379,7 @@ Partial Class FrmTT
         '
         'btnSearchCity
         '
-        Me.btnSearchCity.Image = Global.POIM.My.Resources.Resources.search
+        Me.btnSearchCity.Image = Global.poim.My.Resources.Resources.search
         Me.btnSearchCity.Location = New System.Drawing.Point(151, 19)
         Me.btnSearchCity.Name = "btnSearchCity"
         Me.btnSearchCity.Size = New System.Drawing.Size(22, 20)
@@ -554,7 +554,7 @@ Partial Class FrmTT
         '
         'btnSearch
         '
-        Me.btnSearch.Image = Global.POIM.My.Resources.Resources.search
+        Me.btnSearch.Image = Global.poim.My.Resources.Resources.search
         Me.btnSearch.Location = New System.Drawing.Point(666, 89)
         Me.btnSearch.Name = "btnSearch"
         Me.btnSearch.Size = New System.Drawing.Size(22, 18)

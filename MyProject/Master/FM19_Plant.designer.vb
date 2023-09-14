@@ -106,7 +106,7 @@ Partial Class FM19_Plant
         '
         'BttnHelp
         '
-        Me.BttnHelp.Image = Global.POIM.My.Resources.Resources.search
+        Me.BttnHelp.Image = Global.poim.My.Resources.Resources.search
         Me.BttnHelp.Location = New System.Drawing.Point(206, 17)
         Me.BttnHelp.Name = "BttnHelp"
         Me.BttnHelp.Size = New System.Drawing.Size(22, 18)
@@ -216,7 +216,7 @@ Partial Class FM19_Plant
         '
         'BttnCompanyHelp
         '
-        Me.BttnCompanyHelp.Image = Global.POIM.My.Resources.Resources.search
+        Me.BttnCompanyHelp.Image = Global.poim.My.Resources.Resources.search
         Me.BttnCompanyHelp.Location = New System.Drawing.Point(206, 162)
         Me.BttnCompanyHelp.Name = "BttnCompanyHelp"
         Me.BttnCompanyHelp.Size = New System.Drawing.Size(22, 18)
@@ -225,7 +225,7 @@ Partial Class FM19_Plant
         '
         'BttnCityHelp
         '
-        Me.BttnCityHelp.Image = Global.POIM.My.Resources.Resources.search
+        Me.BttnCityHelp.Image = Global.poim.My.Resources.Resources.search
         Me.BttnCityHelp.Location = New System.Drawing.Point(205, 90)
         Me.BttnCityHelp.Name = "BttnCityHelp"
         Me.BttnCityHelp.Size = New System.Drawing.Size(22, 18)
@@ -320,7 +320,7 @@ Partial Class FM19_Plant
         'btnClose
         '
         Me.btnClose.AutoSize = False
-        Me.btnClose.Image = Global.POIM.My.Resources.Resources.Critical
+        Me.btnClose.Image = Global.poim.My.Resources.Resources.Critical
         Me.btnClose.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.btnClose.Name = "btnClose"
         Me.btnClose.Size = New System.Drawing.Size(60, 22)
@@ -334,7 +334,7 @@ Partial Class FM19_Plant
         'btnNew
         '
         Me.btnNew.AutoSize = False
-        Me.btnNew.Image = Global.POIM.My.Resources.Resources.NewDocumentHS
+        Me.btnNew.Image = Global.poim.My.Resources.Resources.NewDocumentHS
         Me.btnNew.Name = "btnNew"
         Me.btnNew.Size = New System.Drawing.Size(60, 22)
         Me.btnNew.Text = "New"
@@ -348,7 +348,7 @@ Partial Class FM19_Plant
         '
         Me.btnSave.AutoSize = False
         Me.btnSave.Enabled = False
-        Me.btnSave.Image = Global.POIM.My.Resources.Resources.SaveHL
+        Me.btnSave.Image = Global.poim.My.Resources.Resources.SaveHL
         Me.btnSave.Name = "btnSave"
         Me.btnSave.Size = New System.Drawing.Size(60, 22)
         Me.btnSave.Text = "Save"
@@ -362,7 +362,7 @@ Partial Class FM19_Plant
         '
         Me.btnDelete.AutoSize = False
         Me.btnDelete.Enabled = False
-        Me.btnDelete.Image = Global.POIM.My.Resources.Resources.delete
+        Me.btnDelete.Image = Global.poim.My.Resources.Resources.delete
         Me.btnDelete.Name = "btnDelete"
         Me.btnDelete.Size = New System.Drawing.Size(60, 22)
         Me.btnDelete.Text = "Delete"

@@ -79,7 +79,7 @@ Partial Class FrmSettingForm
         '
         'btnPilihKodeForm
         '
-        Me.btnPilihKodeForm.Image = Global.POIM.My.Resources.Resources.search
+        Me.btnPilihKodeForm.Image = Global.poim.My.Resources.Resources.search
         Me.btnPilihKodeForm.Location = New System.Drawing.Point(258, 65)
         Me.btnPilihKodeForm.Name = "btnPilihKodeForm"
         Me.btnPilihKodeForm.Size = New System.Drawing.Size(30, 23)

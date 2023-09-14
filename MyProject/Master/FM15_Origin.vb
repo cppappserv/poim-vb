@@ -4,7 +4,7 @@
 'Created Date : Oktober 2008
 'Table Used   : tbm_origin
 
-Imports POIM.FM15_Origin
+Imports poim.FM15_Origin
 Public Class FM15_Origin
     Dim baru As Boolean
     Dim edit As Boolean
