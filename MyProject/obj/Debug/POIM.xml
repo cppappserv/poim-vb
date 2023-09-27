@@ -2,11 +2,11 @@
 <doc>
 <assembly>
 <name>
-POIM
+poim
 </name>
 </assembly>
 <members>
-<member name="T:POIM.FrmMCI">
+<member name="T:poim.FrmMCI">
 	<summary>
  Title                         : Transaksi Bill of Lading - MCI
  Form                          : FrmMCI
@@ -16,7 +16,7 @@ POIM
  
  </summary>
 	<remarks></remarks>
-</member><member name="T:POIM.FrmRIL">
+</member><member name="T:poim.FrmRIL">
 	<summary>
  Title                         : Transaksi Document Import - RIL
  Form                          : FrmRIL
@@ -36,7 +36,7 @@ POIM
  
  </summary>
 	<remarks></remarks>
-</member><member name="T:POIM.FrmClosingPO">
+</member><member name="T:poim.FrmClosingPO">
 	<summary>
  Title                : Transaksi Closing PO  ==&gt; ubah status PO
  Form                 : FrmClosingPO
@@ -49,7 +49,7 @@ POIM
  
  </summary>
 	<remarks></remarks>
-</member><member name="T:POIM.FrmBLRIL">
+</member><member name="T:poim.FrmBLRIL">
 	<summary>
  Title                         : Transaksi Bill of Lading - RIL
  Form                          : FrmBLRIL
@@ -59,7 +59,7 @@ POIM
  
  </summary>
 	<remarks></remarks>
-</member><member name="T:POIM.FrmDOC_Import">
+</member><member name="T:poim.FrmDOC_Import">
 	<summary>
  Title                : Transaksi Document Import  ==&gt; menjadi Pre Import Document
  Form                 : FrmDoc_Import
@@ -76,7 +76,7 @@ POIM
  
  </summary>
 	<remarks></remarks>
-</member><member name="T:POIM.FrmBLRILQ">
+</member><member name="T:poim.FrmBLRILQ">
 	<summary>
  Title                         : Transaksi Bill of Lading - RIL
  Form                          : FrmBLRIL
@@ -86,20 +86,20 @@ POIM
  
  </summary>
 	<remarks></remarks>
-</member><member name="P:POIM.My.Resources.Resources.ResourceManager">
+</member><member name="P:poim.My.Resources.Resources.ResourceManager">
 	<summary>
   Returns the cached ResourceManager instance used by this class.
 </summary>
-</member><member name="P:POIM.My.Resources.Resources.Culture">
+</member><member name="P:poim.My.Resources.Resources.Culture">
 	<summary>
   Overrides the current thread's CurrentUICulture property for all
   resource lookups using this strongly typed resource class.
 </summary>
-</member><member name="T:POIM.My.Resources.Resources">
+</member><member name="T:poim.My.Resources.Resources">
 	<summary>
   A strongly-typed resource class, for looking up localized strings, etc.
 </summary>
-</member><member name="T:POIM.FrmLT">
+</member><member name="T:poim.FrmLT">
 	<summary>
  Title                         : Laytime Calculation
  Form                          : FrmLT
