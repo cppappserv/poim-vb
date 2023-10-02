@@ -1101,6 +1101,22 @@ Public Class FrmBL
                  "group by a.po_item) as x where Sisa>0 and d_quantity = 0"
 
         dts = DBQueryDataTable(strSQL, MyConn, "", errMSg, UserData)
+        If dts.Rows.Count = 0 Then
+            strSQL = "select `Item`, `Mat.Code`, `Material Name`, `Origin`, `PO Quantity`, `Unit`, `PO Package`, `sisa`, `Actual Quantity`, `Package Unit`, `Package Size`, `country_code`, `price`, `Specification` from (" & _
+                 "select a.PO_Item as 'Item',a.material_code as 'Mat.Code',b.material_name as 'Material Name',e.country_name as 'Origin'," & _
+                 "a.quantity as 'PO Quantity',a.unit_code as 'Unit',a.Package_code as 'PO Package'," & _
+                 "IF (d.quantity>0,a.quantity*((100+c.tolerable_delivery)/100)-sum(d.quantity),a.quantity*((100+c.tolerable_delivery)/100)) as 'sisa'," & _
+                 "0.00 as 'Actual Quantity','' as 'Package Unit',1.00 as 'Package Size',e.country_code,a.price,a.Specification " & _
+                 " ,COALESCE(d.quantity,0) AS d_quantity " & _
+                 "from tbl_po_Detail as a " & _
+                 "inner join tbm_material as b on a.material_Code=b.material_code " & _
+                 "inner join tbl_po as c on a.po_no=c.po_no " & _
+                 "left outer join tbl_shipping_Detail as d on d.po_no=a.po_no and d.po_item = a.po_item " & _
+                 "inner join tbm_country as e on e.country_code=a.country_code " & _
+                 "where a.po_no='" & PO & "' " & _
+                 "group by a.po_item) as x where Sisa>0"
+            dts = DBQueryDataTable(strSQL, MyConn, "", errMSg, UserData)
+        End If
         grid.DataSource = dts
         brsList = List.Items.Count - 1
         FormatGridPO(grid)

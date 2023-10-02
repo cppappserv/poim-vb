@@ -3,7 +3,7 @@
   <asmv1:assemblyIdentity version="3.0.0.3" name="poim.exe" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="x86" type="win32" />
   <application />
   <entryPoint>
-    <assemblyIdentity name="poim" version="4.1.2.6" language="neutral" processorArchitecture="x86" />
+    <assemblyIdentity name="poim" version="4.1.2.5" language="neutral" processorArchitecture="x86" />
     <commandLine file="poim.exe" parameters="" />
   </entryPoint>
   <trustInfo>
@@ -103,7 +103,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>BNxWhQr3vrnS04RbJvN9UPHS9z8=</dsig:DigestValue>
+        <dsig:DigestValue>u2/c7Pz5T6Odbyq5TmHCNUreJ/4=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -115,7 +115,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>Fv5EYZ7gRMb9ZJhgh/Ndh0qfZGA=</dsig:DigestValue>
+        <dsig:DigestValue>oiQcpKaQrU7wfxX/zphYsp9SU00=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -133,13 +133,13 @@
   </dependency>
   <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="poim.exe" size="5148672">
-      <assemblyIdentity name="poim" version="4.1.2.6" language="neutral" processorArchitecture="x86" />
+      <assemblyIdentity name="poim" version="4.1.2.5" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>XHxPlVeUQYQYu5va6bKLgmMqo4Y=</dsig:DigestValue>
+        <dsig:DigestValue>8iktebJ+TQAmTaIi7RAT0Vkgviw=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
