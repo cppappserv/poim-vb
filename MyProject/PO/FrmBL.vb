@@ -1084,7 +1084,7 @@ Public Class FrmBL
         'PO Detail TAB
         grid.DataSource = Nothing
         grid.Columns.Clear()
-
+        ' supram debug 2023-10-05
         errMSg = "PO detail data view failed"
         strSQL = "select `Item`, `Mat.Code`, `Material Name`, `Origin`, `PO Quantity`, `Unit`, `PO Package`, `sisa`, `Actual Quantity`, `Package Unit`, `Package Size`, `country_code`, `price`, `Specification` from (" & _
                  "select a.PO_Item as 'Item',a.material_code as 'Mat.Code',b.material_name as 'Material Name',e.country_name as 'Origin'," & _
@@ -1099,6 +1099,8 @@ Public Class FrmBL
                  "inner join tbm_country as e on e.country_code=a.country_code " & _
                  "where a.po_no='" & PO & "' " & _
                  "group by a.po_item) as x where Sisa>0 and d_quantity = 0"
+
+        '"group by a.po_item, d.PACK_QUANTITY) as x where Sisa>0"
 
         dts = DBQueryDataTable(strSQL, MyConn, "", errMSg, UserData)
         If dts.Rows.Count = 0 Then
@@ -1182,6 +1184,7 @@ Public Class FrmBL
         '         "group by a.po_item"
         ' REMARK BY SUPRAM : 14-09-2022
 
+        ' supram debug 2023-10-05
         strSQL = "select '' as 'No.',curdate() as 'Date',0.00 as 'Original Amount',0.00 as 'Amount',0.00 as 'Penalty Inv.', a.material_code " & _
                  "from tbl_po_Detail as a " & _
                  "inner join tbm_material as b on a.material_Code=b.material_code " & _
@@ -1193,6 +1196,20 @@ Public Class FrmBL
         '                 "group by a.material_code"
 
         dts = DBQueryDataTable(strSQL, MyConn, "", errMSg, UserData)
+        If dts.Rows.Count = 0 Then
+            strSQL = "select '' as 'No.',curdate() as 'Date',0.00 as 'Original Amount',0.00 as 'Amount',0.00 as 'Penalty Inv.' " & _
+                     "from tbl_po_Detail as a " & _
+                     "inner join tbm_material as b on a.material_Code=b.material_code " & _
+                     "inner join tbl_po as c on a.po_no=c.po_no " & _
+                     "left outer join tbl_shipping_Detail as d on d.po_no=a.po_no and d.po_item = a.po_item " & _
+                     "inner join tbm_country as e on e.country_code=a.country_code " & _
+                     "where a.po_no='" & PO & "' and a.quantity>0 " & _
+                     "group by a.po_item"
+            dts = DBQueryDataTable(strSQL, MyConn, "", errMSg, UserData)
+        End If
+
+
+
         GridInv.DataSource = dts
         brs = List.Items.Count - 1
         FormatGridInv(GridInv)
@@ -1369,7 +1386,7 @@ Public Class FrmBL
     Private Sub grid_CellEndEdit(ByVal sender As Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles grid.CellEndEdit
         Dim brs, brs2, kol, brsPO As SByte
 
-        brs = grid.CurrentCell.RowIndex
+2:      brs = grid.CurrentCell.RowIndex
         brs2 = List.Items.Count - 1
         kol = grid.CurrentCell.ColumnIndex
         brsPO = List.SelectedIndex

@@ -3,7 +3,7 @@
   <asmv1:assemblyIdentity version="3.0.0.3" name="poim.exe" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="x86" type="win32" />
   <application />
   <entryPoint>
-    <assemblyIdentity name="poim" version="4.1.2.5" language="neutral" processorArchitecture="x86" />
+    <assemblyIdentity name="poim" version="4.1.2.7" language="neutral" processorArchitecture="x86" />
     <commandLine file="poim.exe" parameters="" />
   </entryPoint>
   <trustInfo>
@@ -103,7 +103,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>u2/c7Pz5T6Odbyq5TmHCNUreJ/4=</dsig:DigestValue>
+        <dsig:DigestValue>FZVLo75rD+p+H+CAwgZQCxqjRRU=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -115,7 +115,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>oiQcpKaQrU7wfxX/zphYsp9SU00=</dsig:DigestValue>
+        <dsig:DigestValue>8qx0sfwKLu2ntFq2Pe2BO9irIWs=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -132,14 +132,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="poim.exe" size="5148672">
-      <assemblyIdentity name="poim" version="4.1.2.5" language="neutral" processorArchitecture="x86" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="poim.exe" size="5149696">
+      <assemblyIdentity name="poim" version="4.1.2.7" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>8iktebJ+TQAmTaIi7RAT0Vkgviw=</dsig:DigestValue>
+        <dsig:DigestValue>12hz7ceQ/oJN46i0l/TnmxQ+rro=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

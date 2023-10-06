@@ -115,7 +115,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>FjT3KPd72zebiiy3STJAHDx/o6U=</dsig:DigestValue>
+        <dsig:DigestValue>oiM93Y/4QwaGG+AUZdFUF0H2iHE=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -132,14 +132,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="poim.exe" size="5327872">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="poim.exe" size="5328896">
       <assemblyIdentity name="poim" version="4.1.2.5" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>ZKWLUc6Eqd0ln1PZMCfdRn4Yc/g=</dsig:DigestValue>
+        <dsig:DigestValue>Uw8wwwuw60S6005BoJcJ64FHoso=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
